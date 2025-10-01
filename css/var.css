@@ -1,0 +1,27 @@
+:root {
+  /* 컬러 */
+  --white: #ffffff;
+  --main-color: #7D0A0D;
+  --font-color1: #1A1A1A;
+  --font-color2: #545454;
+  --bg-color1: #FDFAEE;
+  --bg-color2: #DFB3AF;
+  --foot-bg: #CC8680;
+
+  /* 폰트 사이즈 */
+  --size-64px: 4rem;
+  --size-48px: 3rem;
+  --size-36px: 2.25rem;
+  --size-32px: 2rem;
+  --size-28px: 1.75rem; 
+  --size-24px: 1.5rem;
+  --size-20px: 1.25rem;
+  --size-18px: 1.125rem;
+  --size-16px: 1rem;
+
+  /* 폰트 굵기 */
+  --regular: 300;
+  --medium: 400;
+  --semibold: 600;
+  --bold: 700;
+}
