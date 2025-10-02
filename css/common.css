@@ -20,17 +20,43 @@ nav {
 nav h1 {
   display: flex;
   align-items: center;
-  text-transform: uppercase;
+  gap: 10px;
   font-size: var(--size-18px);
   font-weight: var(--medium);
+  text-transform: uppercase;
 }
 nav ul {
   display: flex;
   gap: 42px;
 }
 nav ul li a {
-  text-transform: uppercase;
+  display: block;
+  line-height: 80px;
   font-size: var(--size-18px);
   font-weight: var(--medium);
+  text-transform: uppercase;
 }
+.marqueeBox {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid var(--line-color);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.marqueeBox span {
+  color: var(--main-color);
+  font-size: var(--size-48px);
+  font-weight: var(--medium);
+  text-transform: uppercase;
+}
+.marquee {
+  animation-name: moveText;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes moveText {
+  0%{transform: translateX(0);}
+  100%{transform: translateX(-100%);}
 
+}
