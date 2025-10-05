@@ -1,63 +1,127 @@
 body{
   background-color: var(--bg-color1);
+  padding-top: 5rem; 
 }
+/* 모바일 사이즈 */
+@media (max-width: 888px) {
+  body {
+    padding-top: 3.75rem;
+  }
+}
+/* header */
 header {
   width: 100%;
-  min-height: 80px;
+  min-height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   background-color: var(--main-color);
   color: var(--white);
+  display: flex;
+  align-items: center;
 }
 .gnb-wrap {
+  width: 100%;
   height: 100%;
-  padding: 0 120px;
+  padding: 0 7.5rem;
+}
+@media (max-width: 1100px) {
+  .gnb-wrap {
+    padding: 0 2.5rem;
+  }
 }
 nav {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-left: auto;
+  gap: 3.125rem;
 }
 nav h1 {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-size: var(--size-18px);
   font-weight: var(--medium);
   text-transform: uppercase;
 }
-nav ul {
+.profile-img {
+  width: 60px;
+  height: 60px;
+}
+.profile-img::before {
+  content: none;
+}
+.nav-right {
   display: flex;
-  gap: 42px;
+  align-items: center;
+  gap: 2.625rem;
+  margin-left: auto;
 }
-nav ul li a {
-  display: block;
-  line-height: 80px;
-  font-size: var(--size-18px);
+.nav-list {
+  display: flex;
+}
+.nav-list li a {
+  display: inline-block;
+  font-size: var(--size-16px);
   font-weight: var(--medium);
   text-transform: uppercase;
+  padding: 2rem 1.375rem;
 }
-.marqueeBox {
-  width: 100%;
-  padding: 10px;
-  border-bottom: 1px solid var(--line-color);
+.btn-download {
+  display: inline-block; 
   white-space: nowrap;
-  overflow: hidden;
-}
-.marqueeBox span {
+  width: 7.875rem; 
+  background-color: var(--foot-bg);
   color: var(--main-color);
-  font-size: var(--size-48px);
+  padding: 0.5rem 0.9375ren;
+  border-radius: 6px;
+  font-size: var(--size-16px);
   font-weight: var(--medium);
+  text-align: center;
   text-transform: uppercase;
+  transition: background-color 0.2s;
 }
-.marquee {
-  animation-name: moveText;
-  animation-duration: 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+.btn-download:hover {
+  background-color: #e0b0b0;
+  font-weight: var(--semibold);
 }
-@keyframes moveText {
-  0%{transform: translateX(0);}
-  100%{transform: translateX(-100%);}
-
+@media screen and (max-width: 888px) {
+  header {
+    min-height: 3.75rem;
+  }
+  .gnb-wrap {
+    padding: 0 1.25rem;
+  }
+  nav h1 {
+    font-size: var(--size-16px);
+    gap: 0;
+  }
+  nav h1 img {
+    display: none;
+  }
+  nav h1 .name::before {
+    content: "";
+    display: inline-block;
+    width: 48px; 
+    height: 48px; 
+    margin-right: 0.75rem;
+    background-image: url('../img/small_profile.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+  .nav-list {
+    display: none;
+  }
+  .btn-download {
+    font-size: var(--size-14px);
+    padding: 0.3125rem 0.625rem;
+    width: 7.125rem; 
+  }
+  .nav-right {
+    gap: 0;
+  }
+  .btn-download {
+    width: 114px;
+  }
 }

@@ -1,9 +1,90 @@
-/* 메인비주얼 */
-section {
+/* 메인 비주얼 */
+.main-visual-wrap {
+  height: calc(100vh - 5rem); 
+  width: 100%;
   position: relative;
 }
-.txt-area {
+.visual-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* 콘텐츠보다 뒤로 보냄 */
+  overflow: hidden;
+}
+.main-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지가 잘리지 않고 컨테이너를 채우도록 */
+}
+.main-visual-content {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5; /* 배경보다 앞으로 보냄 */
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+.hello {
+  color: var(--main-color);
+  font-size: var(--size-48px);
+  font-weight: var(--regular);
+  text-align: center; 
+  text-transform: uppercase;
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 4.0625rem;
+}
+.visual-logo-img {
+  width: 50vw; 
+  height: auto; 
+  max-width: 600px;
+  position: relative;
+}
+.marqueeBox {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid var(--line-color);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.marqueeBox span {
+  color: var(--main-color);
+  font-size: var(--size-48px);
+  font-weight: var(--medium);
+  text-transform: uppercase;
+}
+.marquee {
+  animation-name: moveText;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes moveText {
+  0%{transform: translateX(0);}
+  100%{transform: translateX(-100%);}
+}
+/* 모바일 버전 */
+@media screen and (max-width: 888px) {
+  .main-visual-wrap {
+    height: calc(100vh - 3.75rem);
+  }
+  .hello {
+    font-size: var(--size-28px);
+    margin-bottom: 3rem;
+  }
+  .visual-logo-img {
+    width: 80vw;
+    max-width: none; 
+  }
+  .marqueeBox {
+    height: 5.125rem;
+  }
+  .marqueeBox span {
+    font-size: var(--size-28px);
+  }
 }
