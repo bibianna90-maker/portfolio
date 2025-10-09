@@ -125,3 +125,17 @@ nav h1 {
     width: 114px;
   }
 }
+/* 컨테이너 설정 */
+.container {
+  padding-left: 16.25rem;
+  padding-right: 16.25rem;
+  max-width: 87.5rem;
+  margin: 0 auto; 
+}
+@media screen and (max-width: 888px) {
+  .container {
+      padding-left: 1.25rem; 
+      padding-right: 1.25rem;
+      max-width: none; 
+  }
+}
