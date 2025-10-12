@@ -369,8 +369,12 @@
   padding: 5.625rem 0 0;
   display: flex; 
   flex-direction: column;
-  align-items: center;
   background-color: var(--bg-color2);
+}
+.portfolio-container {
+  padding: 0 7.5rem;
+  margin: 0 auto;
+  width: 100%; 
 }
 .portfolio-title {
   font-size: var(--size-32px); 
@@ -382,6 +386,8 @@
 }
 .filter-wrap {
   margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
 }
 .filter-menu {
   display: flex;
@@ -413,6 +419,117 @@
   background-color: var(--main-color);
   color: #fff;
   border-color: var(--main-color);
-  font-weight: var(--semibold); /* 활성화된 버튼 강조 */
+  font-weight: var(--semibold);
 }
-
+.works-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.25rem;
+  width: 100%; 
+}
+.work-item {
+  position: relative; 
+  overflow: hidden;
+  cursor: pointer;
+  background-color: var(--bg-color-item);
+}
+.work-img-wrap {
+  position: relative;
+}
+.work-base-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.work-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #fff;
+}
+.work-item:hover .work-overlay {
+  opacity: 1;
+}
+.work-item:hover .work-base-img {
+  transform: scale(1.05);
+}
+.overlay-title {
+  font-size: var(--size-24px); 
+  font-weight: var(--semibold);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.overlay-subtitle {
+  font-size: var(--size-16px);
+  color: rgba(255, 255, 255, 0.8);
+}
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none; /* ⭐️ 기본적으로 숨김 (JS로 제어) ⭐️ */
+  justify-content: center;
+  align-items: center;
+}
+.modal.visible {
+    display: flex; /* JS로 .visible 클래스 추가/제거 */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 1.5rem;
+  width: 80%;
+  max-width: 900px; /* 모달의 최대 크기 */
+  border-radius: 0.5rem;
+  position: relative;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.modal-title {
+  font-size: var(--size-24px);
+  font-weight: var(--bold);
+  color: var(--font-color1);
+}
+.close-btn {
+color: #aaa;
+float: right;
+font-size: 2rem;
+font-weight: bold;
+cursor: pointer;
+transition: color 0.2s;
+}
+.close-btn:hover,
+.close-btn:focus {
+  color: var(--main-color);
+  text-decoration: none;
+}
+.modal-test-content {
+    /* TEST 내용을 보여주는 박스 (임시) */
+    background-color: #90ee90;
+    height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #333;
+}
