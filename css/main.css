@@ -431,7 +431,6 @@
   position: relative; 
   overflow: hidden;
   cursor: pointer;
-  background-color: var(--bg-color-item);
 }
 .work-img-wrap {
   position: relative;
@@ -484,52 +483,84 @@
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.7);
   display: none; /* ⭐️ 기본적으로 숨김 (JS로 제어) ⭐️ */
-  justify-content: center;
-  align-items: center;
 }
 .modal.visible {
-    display: flex; /* JS로 .visible 클래스 추가/제거 */
+  display: flex; /* JS로 .visible 클래스 추가/제거 */
+  justify-content: center;
+  align-items: flex-start;
 }
 .modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 1.5rem;
-  width: 80%;
-  max-width: 900px; /* 모달의 최대 크기 */
+  background-color: var(--bg-color1);
+  margin: 1.75rem auto;
+  padding: 0;
+  width: 90%;
+  max-width: 76.1875rem; /* 모달의 최대 크기 */
   border-radius: 0.5rem;
   position: relative;
+  overflow: hidden;
 }
 .modal-header {
+  position: relative;
+  padding: 1.5rem;
+  border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+}
+.modal-body {
+  padding: 0;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+/* 모달 상세 컨테이너 (Uglyus 내용) */
+.work-detail-container {
+    padding: 2rem; /* 내용 내부 패딩 */
+    line-height: 1.6;
+}
+
+/* 타이틀 이미지 섹션 (Hands on Box) */
+.detail-title-img-wrap {
+  width: 100%;
+  height: 400px; /* 임의 높이, 이미지 비율에 따라 조정 필요 */
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  background-color: #333; 
+}
+
+.detail-title-text {
+    position: absolute;
+    top: 50%;
+    left: 7.5rem; /* 120px 여백 */
+    transform: translateY(-50%);
+    z-index: 10;
+    /* 세부 텍스트 스타일 */
+    max-width: 50%;
+}
+.detail-title-text h4 {
+    font-size: 2rem;
+    font-weight: var(--bold);
+}
+
+.detail-main-img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 .modal-title {
+  margin-right: 3rem;
   font-size: var(--size-24px);
   font-weight: var(--bold);
   color: var(--font-color1);
 }
 .close-btn {
-color: #aaa;
-float: right;
-font-size: 2rem;
-font-weight: bold;
-cursor: pointer;
-transition: color 0.2s;
-}
-.close-btn:hover,
-.close-btn:focus {
-  color: var(--main-color);
-  text-decoration: none;
-}
-.modal-test-content {
-    /* TEST 내용을 보여주는 박스 (임시) */
-    background-color: #90ee90;
-    height: 400px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4rem;
-    color: #333;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 1001;
+  color: #aaa;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
 }
