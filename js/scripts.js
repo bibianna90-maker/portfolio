@@ -2,147 +2,181 @@
 // ⭐️ 1. JSON 데이터 객체 (파일 최상단) ⭐️
 // ----------------------------------------------------
 const workDetailsData = {
-    "Uglyus": {
-        title: "Uglyus",
-        category: "CONTENTS / 못난이 채소 정기구독 상세페이지 리디자인",
-        tool: "Figma, Photoshop",
-        participation: "100% 개인 프로젝트 | 2025",
-        concept: "고객의 건강을 위해 친환경 채소를 실속 있는 정보로 전달하는 서비스",
-        headerImg: "./img/uglyus_detail_header.jpg", // 이미지 경로 확인
-        mainTarget: "시장을 보기 힘든 직장인, 가성비와 신선한 야채를 찾는 소가구",
-        designInsights: "브랜드 시그니처 컬러와 제품 이미지를 강조하고 크래프트지 유사 색상으로 친환경 가치를 통일하는 동시에, 아이콘과 디자인으로 친근감을 높여 심플한 고딕 서체와 간결한 구조로 정보의 신뢰도와 가독성을 극대화하여 디자인하였습니다.",
-        fullDetailImg: "./img/세부내용-어글리어스.jpg" // 상세 스크롤 이미지 경로 확인
-    },
-    "Cruise": {
-        title: "Lotte Tour",
-        // ... (나머지 작품 정보는 여기에 추가 및 수정)
-        fullDetailImg: "./img/lotte_tour_full_detail.jpg"
-    },
-    "Statue": {
-        title: "Oh! My Down There",
-        // ...
-        fullDetailImg: "./img/statue_full_detail.jpg"
-    }
+  "Uglyus": {
+  title: "Uglyus",
+  category: "CONTENTS / 못난이 채소 정기구독 상세페이지 리디자인",
+  tool: "Figma, Photoshop",
+  participation: "100% 개인 프로젝트 | 2025",
+  concept: "고객의 건강을 위해 친환경 채소를 실속 있는 정보로 전달하는 서비스",
+  headerImg: "./img/modal_uglyus_title.jpg", // 이미지 경로 확인
+  mainTarget: "시장을 보기 힘든 직장인, 가성비와 신선한 야채를 찾는 소가구",
+  designInsights: "브랜드 시그니처 컬러와 제품 이미지를 강조하고 크래프트지 유사 색상으로 친환경 가치를 통일하는 동시에, 아이콘과 디자인으로 친근감을 높여 심플한 고딕 서체와 간결한 구조로 정보의 신뢰도와 가독성을 극대화하여 디자인하였습니다.",
+  fullDetailImg: "./img/세부내용-어글리어스.jpg", // 상세 스크롤 이미지 경로 확인
+  buttons: [
+            { text: "VIEW", link: "링크_URL_1" },
+  ],
+   bottomImages: [
+            "./img/uglyus_bottom_img_1.jpg", 
+            "./img/uglyus_bottom_img_2.jpg", 
+            "./img/uglyus_bottom_img_3.jpg",
+            // 필요한 만큼 이미지 경로를 추가합니다.
+  ],
+},
+
+  "Cruise": {
+  title: "Lotte Tour",
+// ... (나머지 작품 정보는 여기에 추가 및 수정)
+fullDetailImg: "./img/lotte_tour_full_detail.jpg",
+buttons: [
+            { text: "VIEW", link: "링크_URL_1" },
+            { text: "WEBSITE", link: "링크_URL_2" }
+  ],
+   bottomImages: [
+            "./img/uglyus_bottom_img_1.jpg", 
+            "./img/uglyus_bottom_img_2.jpg", 
+            "./img/uglyus_bottom_img_3.jpg",
+            // 필요한 만큼 이미지 경로를 추가합니다.
+  ],
+},
+  "Statue": {
+ title: "Oh! My Down There",
+ // ...
+fullDetailImg: "./img/statue_full_detail.jpg"
+  }
 };
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 2. 필요한 HTML 요소들을 가져옵니다.
-    const filterItems = document.querySelectorAll('.filter-item');
-    const workItems = document.querySelectorAll('.work-item');
-    const worksGallery = document.querySelector('.works-gallery');
-    
-    // 모달 요소
-    const modal = document.getElementById('portfolio-modal');
-    const closeBtn = modal.querySelector('.close-btn');
-    const modalTitle = modal.querySelector('.modal-title');
-    // modalBody는 모달의 내용 컨테이너 (이전 HTML에서 #modal-detail-content로 변경했음)
-    const modalBodyContainer = modal.querySelector('.modal-detail-content'); 
+ // 2. 필요한 HTML 요소들을 가져옵니다.
+  const filterItems = document.querySelectorAll('.filter-item');
+  const workItems = document.querySelectorAll('.work-item');
+  const worksGallery = document.querySelector('.works-gallery');
 
-    // ----------------------------------------------------
-    // 3. 필터링 로직 (변화 없음)
-    // ----------------------------------------------------
-    filterItems.forEach(item => {
-        item.addEventListener('click', (e) => {
-            const selectedCategory = e.target.dataset.category;
-            filterItems.forEach(i => i.classList.remove('active'));
-            e.target.classList.add('active');
-            filterWorks(selectedCategory);
+  // 모달 요소
+  const modal = document.getElementById('portfolio-modal');
+  const closeBtn = modal.querySelector('.close-btn');
+  // ⭐️ modalTitle 선언은 삭제되었습니다. ⭐️
+  const modalBodyContainer = modal.querySelector('.modal-detail-content'); 
+
+  // ----------------------------------------------------
+  // 3. 필터링 로직 (변화 없음)
+  // ----------------------------------------------------
+  filterItems.forEach(item => {
+  item.addEventListener('click', (e) => {
+  const selectedCategory = e.target.dataset.category;
+  filterItems.forEach(i => i.classList.remove('active'));
+  e.target.classList.add('active');
+  filterWorks(selectedCategory);
+ });
+});
+
+  function filterWorks(category) {
+  worksGallery.style.display = 'flex';
+  worksGallery.style.flexWrap = 'wrap';
+
+  workItems.forEach(item => {
+  if (category === 'all' || item.classList.contains(category)) {
+    item.style.display = 'block'; 
+    item.classList.remove('hidden-item'); 
+ } else {
+    item.style.display = 'none';
+    item.classList.add('hidden-item');
+  }
+});
+
+setTimeout(() => {
+  worksGallery.style.display = 'grid'; 
+  worksGallery.style.flexWrap = 'initial';
+}, 50); 
+ }
+ 
+ filterWorks('all'); // 초기 로드
+
+// ----------------------------------------------------
+// 4. 모달 팝업 로직 (수정됨)
+// ----------------------------------------------------
+
+workItems.forEach(item => {
+  item.addEventListener('click', () => {
+ const workTitleKey = item.dataset.title; // 예: 'Uglyus'
+
+// ⭐️ JSON 데이터를 읽어 HTML을 생성하고 삽입하는 함수 호출 ⭐️
+loadWorkDetail(workTitleKey);
+
+// 모달 표시
+ modal.classList.add('visible');
+document.body.style.overflow = 'hidden'; // 배경 스크롤 방지
+  });
+});
+
+// 닫기 함수 정의 (수정 없음)
+ closeBtn.addEventListener('click', closeModal);
+ modal.addEventListener('click', (e) => {
+ if (e.target === modal) {
+ closeModal();
+ }
+ });
+ function closeModal() {
+ modal.classList.remove('visible');
+ document.body.style.overflow = 'auto'; 
+ }
+
+// ----------------------------------------------------
+// ⭐️ 5. JSON 기반 내용 로딩 함수 (modalTitle 참조 코드 제거) ⭐️
+// ----------------------------------------------------
+ function loadWorkDetail(titleKey) {
+ // 전역에 있는 workDetailsData 객체에 접근합니다.
+ const data = workDetailsData[titleKey]; 
+ 
+ if (!data) {
+ // ⭐️ modalTitle 참조 코드 제거 ⭐️
+ modalBodyContainer.innerHTML = "작품 정보를 찾을 수 없습니다.";
+ return;
+ }
+ // ⭐️ 1. 버튼 HTML 생성 ⭐️
+    let buttonHTML = '';
+    if (data.buttons && data.buttons.length > 0) {
+        data.buttons.forEach(btn => {
+            buttonHTML += `<a href="${btn.link}" target="_blank" class="detail-btn">${btn.text}</a>`;
         });
-    });
-
-    function filterWorks(category) {
-        worksGallery.style.display = 'flex';
-        worksGallery.style.flexWrap = 'wrap';
-
-        workItems.forEach(item => {
-            if (category === 'all' || item.classList.contains(category)) {
-                item.style.display = 'block'; 
-                item.classList.remove('hidden-item'); 
-            } else {
-                item.style.display = 'none';
-                item.classList.add('hidden-item');
-            }
+        buttonHTML = `<div class="detail-btn-wrap">${buttonHTML}</div>`;
+    }
+   // ⭐️ 2. 하단 이미지 HTML 생성 ⭐️
+    let bottomImagesHTML = '';
+    if (data.bottomImages && data.bottomImages.length > 0) {
+        data.bottomImages.forEach(imgSrc => {
+            bottomImagesHTML += `<img src="${imgSrc}" alt="${data.title} 하단 이미지" class="detail-bottom-img">`;
         });
-
-        setTimeout(() => {
-            worksGallery.style.display = 'grid'; 
-            worksGallery.style.flexWrap = 'initial';
-        }, 50); 
+        bottomImagesHTML = `<div class="detail-bottom-img-wrap">${bottomImagesHTML}</div>`;
     }
+
+ // ⭐️ modalTitle 참조 코드 제거 ⭐️
+ // modalTitle.textContent = data.title.toUpperCase(); 
+
+const contentHTML = `
+<div class="detail-title-img-wrap" style="background-image: url(${data.headerImg});">
+    <div class="detail-title-text">
+        <h4 class="e-txt">${data.title}</h4>
+        <p class="category">${data.category}</p>
+        <hr style="border-color: rgba(255,255,255,0.4); margin: 1rem 0;">
+        <p class="tool">TOOL: ${data.tool}</p>
+        <p class="participation">PARTICIPATION: ${data.participation}</p>
+        <p class="concept-explain" style="margin-top: 1rem;">
+            CONCEPT EXPLAIN:<br>
+            ${data.concept}
+        </p>
+        ${buttonHTML} </div>
+</div>
+<div class="work-detail-container">
+    <h5 style="font-weight: var(--bold); margin-top: 2rem;">MAIN TARGET</h5>
+    <p style="margin-bottom: 2rem;">${data.mainTarget}</p>
+    <h5 style="font-weight: var(--bold);">DESIGN INSIGHTS</h5>
+    <p>${data.designInsights}</p>
+    <img src="${data.fullDetailImg}" alt="${data.title} 전체 상세 페이지" class="detail-full-img">
+</div>
+${bottomImagesHTML} `;
     
-    filterWorks('all'); // 초기 로드
-
-    // ----------------------------------------------------
-    // 4. 모달 팝업 로직 (수정됨)
-    // ----------------------------------------------------
-
-    workItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const workTitleKey = item.dataset.title; // 예: 'Uglyus'
-            
-            // ⭐️ JSON 데이터를 읽어 HTML을 생성하고 삽입하는 함수 호출 ⭐️
-            loadWorkDetail(workTitleKey);
-            
-            // 모달 표시
-            modal.classList.add('visible');
-            document.body.style.overflow = 'hidden'; // 배경 스크롤 방지
-        });
-    });
-
-    // 닫기 함수 정의 (수정 없음)
-    closeBtn.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            closeModal();
-        }
-    });
-    function closeModal() {
-        modal.classList.remove('visible');
-        document.body.style.overflow = 'auto'; 
-    }
-    
-    // ----------------------------------------------------
-    // ⭐️ 5. JSON 기반 내용 로딩 함수 (수정됨) ⭐️
-    // ----------------------------------------------------
-    function loadWorkDetail(titleKey) {
-        // 전역에 있는 workDetailsData 객체에 접근합니다.
-        const data = workDetailsData[titleKey]; 
-        
-        if (!data) {
-            modalTitle.textContent = "Error";
-            modalBodyContainer.innerHTML = "작품 정보를 찾을 수 없습니다.";
-            return;
-        }
-
-        modalTitle.textContent = data.title.toUpperCase();
-
-        const contentHTML = `
-            <div class="detail-title-img-wrap" style="background-image: url(${data.headerImg});">
-                <div class="detail-title-text">
-                    <h4 class="e-txt">${data.title}</h4>
-                    <p class="category">${data.category}</p>
-                    <hr style="border-color: rgba(255,255,255,0.4); margin: 1rem 0;">
-                    <p class="tool">TOOL: ${data.tool}</p>
-                    <p class="participation">PARTICIPATION: ${data.participation}</p>
-                    <p class="concept-explain" style="margin-top: 1rem;">
-                        CONCEPT EXPLAIN:<br>
-                        ${data.concept}
-                    </p>
-                </div>
-            </div>
-
-            <div class="work-detail-container">
-                <h5 style="font-weight: var(--bold); margin-top: 2rem;">MAIN TARGET</h5>
-                <p style="margin-bottom: 2rem;">${data.mainTarget}</p>
-                
-                <h5 style="font-weight: var(--bold);">DESIGN INSIGHTS</h5>
-                <p>${data.designInsights}</p>
-                
-                <img src="${data.fullDetailImg}" alt="${data.title} 전체 상세 페이지" class="detail-full-img">
-            </div>
-        `;
-        
-        modalBodyContainer.innerHTML = contentHTML;
-    }
+    modalBodyContainer.innerHTML = contentHTML.trim();
+}
+ 
 });
