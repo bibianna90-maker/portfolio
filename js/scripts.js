@@ -4,21 +4,23 @@
 const workDetailsData = {
   "Uglyus": {
   title: "Uglyus",
-  category: "CONTENTS / 못난이 채소 정기구독 상세페이지 리디자인",
+  category: "CONTENTS / 어글리어스 못난이 채소 정기구독 상세페이지 리디자인",
   tool: "Figma, Photoshop",
   participation: "100% 개인 프로젝트 | 2025",
-  concept: "고객의 건강을 위해 친환경 채소를 실속 있는 정보로 전달하는 서비스",
+  concept: "고객의 건강을 위한 친환경 채소를 실속 있는 장보기로 전달하는 서비스",
   headerImg: "./img/modal_uglyus_title.jpg", // 이미지 경로 확인
-  mainTarget: "시장을 보기 힘든 직장인, 가성비와 신선한 야채를 찾는 소가구",
-  designInsights: "브랜드 시그니처 컬러와 제품 이미지를 강조하고 크래프트지 유사 색상으로 친환경 가치를 통일하는 동시에, 아이콘과 디자인으로 친근감을 높여 심플한 고딕 서체와 간결한 구조로 정보의 신뢰도와 가독성을 극대화하여 디자인하였습니다.",
-  fullDetailImg: "./img/세부내용-어글리어스.jpg", // 상세 스크롤 이미지 경로 확인
+  mainTarget: "시장을 보기 힘든 직장인, 가성비 신선한 야채를 찾는 소가구",
+  designInsights: "브랜드 시그니처 컬러와 제품 이미지를 강조하고 크래프트지 유사 색상으로<br> 친환경 가치를 투영하는 동시에, 이모지와 아이콘으로 친근감을 높이고<br> 심플한 고딕 서체와 간결한 구조로 정보의 신뢰도와 가독성을<br> 극대화하여 디자인하였습니다.",
+  bodyBgImg: "./img/modal_uglyus_insights.jpg",
   buttons: [
             { text: "VIEW", link: "링크_URL_1" },
   ],
    bottomImages: [
             "./img/uglyus_bottom_img_1.jpg", 
-            "./img/uglyus_bottom_img_2.jpg", 
-            "./img/uglyus_bottom_img_3.jpg",
+            "./img/modal_uglyus_content-02.jpg", 
+            "./img/modal_uglyus_content-03.jpg",
+            "./img/modal_uglyus_content-03.jpg",
+            "./img/modal_uglyus_content-03.jpg",
             // 필요한 만큼 이미지 경로를 추가합니다.
   ],
 },
@@ -167,12 +169,12 @@ const contentHTML = `
         </p>
         ${buttonHTML} </div>
 </div>
-<div class="work-detail-container">
+<div class="work-detail-container" style="background-image: url(${data.bodyBgImg});">
     <h5 style="font-weight: var(--bold); margin-top: 2rem;">MAIN TARGET</h5>
     <p style="margin-bottom: 2rem;">${data.mainTarget}</p>
     <h5 style="font-weight: var(--bold);">DESIGN INSIGHTS</h5>
     <p>${data.designInsights}</p>
-    <img src="${data.fullDetailImg}" alt="${data.title} 전체 상세 페이지" class="detail-full-img">
+    <!--<img src="${data.fullDetailImg}" alt="${data.title} 전체 상세 페이지" class="detail-full-img">-->
 </div>
 ${bottomImagesHTML} `;
     

@@ -511,9 +511,17 @@
 }
 /* 모달 상세 컨테이너 (Uglyus 내용) */
 .work-detail-container {
-    padding: 2rem 7.5rem; /* 내용 내부 패딩 */
-    line-height: 1.6;
-    text-align: left;
+  padding: 2rem 7.5rem; /* 내용 내부 패딩 */
+  line-height: 1.6;
+  text-align: left;
+
+  background-size: cover; /* 이미지가 컨테이너를 덮도록 설정 */
+  background-position: center; /* 이미지를 중앙에 배치 */
+  background-repeat: no-repeat; /* 이미지 반복 방지 */
+  position: relative; /* 내부 요소의 z-index 기준 설정 (필요 시) */
+
+  min-height: 560px;
+  height: auto;
 }
 /* 타이틀 이미지 섹션 (Hands on Box) */
 .detail-title-img-wrap {
@@ -572,7 +580,7 @@
     color: var(--white);
     background-color: var(--foot-bg);
     border: 1px solid var(--foot-bg);
-    border-radius: 0.5rem;
+    border-radius: 0.375rem;
     text-decoration: none;
     font-size: var(--size-16px);
     font-weight: var(--medium);
@@ -594,7 +602,7 @@
     margin: 0;
 }
 .detail-bottom-img {
-    width: 100%; /* 하단 이미지는 전체 너비를 사용 */
+    width: 100%;
     height: auto;
     display: block;
     margin-bottom: 0; /* 이미지 간 간격이 필요하다면 여기에 추가 */
