@@ -506,13 +506,15 @@
 }
 .modal-body {
   padding: 0;
+  font-size: var(--size-16px);
+  line-height: 1.5;
   overflow-y: auto;
-  max-height: 80vh;
+  max-height: 93vh;
 }
 /* 모달 상세 컨테이너 (Uglyus 내용) */
 .work-detail-container {
-  padding: 2rem 7.5rem; /* 내용 내부 패딩 */
-  line-height: 1.6;
+  padding: 2rem 6.5rem; /* 내용 내부 패딩 */
+  line-height: 1.5;
   text-align: left;
 
   background-size: cover; /* 이미지가 컨테이너를 덮도록 설정 */
@@ -520,7 +522,7 @@
   background-repeat: no-repeat; /* 이미지 반복 방지 */
   position: relative; /* 내부 요소의 z-index 기준 설정 (필요 시) */
 
-  min-height: 560px;
+  min-height: 324px;
   height: auto;
 }
 /* 타이틀 이미지 섹션 (Hands on Box) */
@@ -535,7 +537,7 @@
 .detail-title-text {
   position: absolute;
   top: 50%;
-  left: 7.5rem; /* 120px 여백 */
+  left: 6.5rem;
   transform: translateY(-50%);
   z-index: 10;
   max-width: 50%;
@@ -561,14 +563,11 @@
   cursor: pointer;
   transition: color 0.2s;
 }
-.detail-title-text p {
-    text-align: left;
-}
-.work-detail-container h5,
+.detail-title-text p,
 .work-detail-container p {
     text-align: left;
 }
-/* ⭐️ 버튼 스타일 (detail-title-text 내부) ⭐️ */
+/* 버튼 스타일 */
 .detail-btn-wrap {
     display: flex;
     gap: 0.75em;
@@ -591,7 +590,7 @@
     color: var(--white);
     border: 1px solid var(--main-color);
 }
-/* ⭐️ 하단 이미지 섹션 스타일 (Bottom Images) ⭐️ */
+/* 하단 이미지 섹션 스타일 */
 .detail-bottom-img-wrap {
     /* 모달 전체 너비를 사용하려면 max-width: 100%를 유지 */
     width: 100%; 
@@ -606,4 +605,8 @@
     height: auto;
     display: block;
     margin-bottom: 0; /* 이미지 간 간격이 필요하다면 여기에 추가 */
+}
+.detail-label-group {
+  margin-bottom: 1.5rem; 
+  margin-top: 0; 
 }

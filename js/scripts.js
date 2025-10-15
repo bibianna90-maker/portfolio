@@ -8,7 +8,7 @@ const workDetailsData = {
   tool: "Figma, Photoshop",
   participation: "100% 개인 프로젝트 | 2025",
   concept: "고객의 건강을 위한 친환경 채소를 실속 있는 장보기로 전달하는 서비스",
-  headerImg: "./img/modal_uglyus_title.jpg", // 이미지 경로 확인
+  headerImg: "./img/modal_uglyus_title.jpg",
   mainTarget: "시장을 보기 힘든 직장인, 가성비 신선한 야채를 찾는 소가구",
   designInsights: "브랜드 시그니처 컬러와 제품 이미지를 강조하고 크래프트지 유사 색상으로<br> 친환경 가치를 투영하는 동시에, 이모지와 아이콘으로 친근감을 높이고<br> 심플한 고딕 서체와 간결한 구조로 정보의 신뢰도와 가독성을<br> 극대화하여 디자인하였습니다.",
   bodyBgImg: "./img/modal_uglyus_insights.jpg",
@@ -16,11 +16,13 @@ const workDetailsData = {
             { text: "VIEW", link: "링크_URL_1" },
   ],
    bottomImages: [
-            "./img/uglyus_bottom_img_1.jpg", 
-            "./img/modal_uglyus_content-02.jpg", 
-            "./img/modal_uglyus_content-03.jpg",
-            "./img/modal_uglyus_content-03.jpg",
-            "./img/modal_uglyus_content-03.jpg",
+            "./img/modal_uglyus_content-01.jpg",
+            "./img/modal_uglyus_content-02.jpg",  
+            "./img/modal_uglyus_content-03.jpg", 
+            "./img/modal_uglyus_content-04.jpg",
+            "./img/modal_uglyus_content-05.jpg",
+            "./img/modal_uglyus_content-06.jpg",
+            "./img/modal_uglyus_content-07.jpg",
             // 필요한 만큼 이미지 경로를 추가합니다.
   ],
 },
@@ -159,26 +161,43 @@ const contentHTML = `
 <div class="detail-title-img-wrap" style="background-image: url(${data.headerImg});">
     <div class="detail-title-text">
         <h4 class="e-txt">${data.title}</h4>
-        <p class="category">${data.category}</p>
+        
+        <p class="category detail-label-group">
+            <strong>CONTENTS /</strong> ${data.category.split('/')[1].trim()}
+        </p> 
         <hr style="border-color: rgba(255,255,255,0.4); margin: 1rem 0;">
-        <p class="tool">TOOL: ${data.tool}</p>
-        <p class="participation">PARTICIPATION: ${data.participation}</p>
-        <p class="concept-explain" style="margin-top: 1rem;">
-            CONCEPT EXPLAIN:<br>
-            ${data.concept}
+        
+        <p class="tool detail-label-group">
+            <strong>TOOL</strong> <br> ${data.tool}
+        </p> 
+        
+        <p class="participation detail-label-group">
+            <strong>PARTICIPATION</strong> <br> ${data.participation}
         </p>
-        ${buttonHTML} </div>
+        
+        <p class="concept-explain detail-label-group" style="margin-top: 1rem;">
+            <strong>CONCEPT EXPLAIN</strong> <br> ${data.concept}
+        </p>
+        
+        ${buttonHTML}
+    </div>
 </div>
 <div class="work-detail-container" style="background-image: url(${data.bodyBgImg});">
-    <h5 style="font-weight: var(--bold); margin-top: 2rem;">MAIN TARGET</h5>
-    <p style="margin-bottom: 2rem;">${data.mainTarget}</p>
-    <h5 style="font-weight: var(--bold);">DESIGN INSIGHTS</h5>
-    <p>${data.designInsights}</p>
-    <!--<img src="${data.fullDetailImg}" alt="${data.title} 전체 상세 페이지" class="detail-full-img">-->
-</div>
-${bottomImagesHTML} `;
     
-    modalBodyContainer.innerHTML = contentHTML.trim();
-}
- 
+    <p class="detail-label-group" style="margin-top: 4.125rem;">
+        <strong>MAIN TARGET</strong><br>
+        ${data.mainTarget}
+    </p>
+    
+    <p class="detail-label-group">
+        <strong>DESIGN INSIGHTS</strong><br>
+        ${data.designInsights}
+    </p>
+    
+    </div>
+${bottomImagesHTML} `;
+
+modalBodyContainer.innerHTML = contentHTML.trim();
+
+} 
 });
