@@ -626,12 +626,24 @@
   }
 }
 @media (max-width: 576px) {
+  .portfolio-container {
+    padding: 0 1rem;
+  }
+  .filter-wrap {
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    padding: 0 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .filter-menu {
+    white-space: nowrap;
+  }
   .works-gallery {
     grid-template-columns: 1fr;
     gap: 2rem 0;
-  }
-  .portfolio-container {
-    padding: 0 1rem;
   }
   .filter-menu-wrap {
     justify-content: flex-start;
@@ -645,5 +657,53 @@
   }
   .filter-item {
     font-size: var(--size-14px);
+  }
+  /* 모달페이지 */
+  .modal-content {
+    width: 95%; 
+    margin: 1rem auto;
+    max-width: none;
+  }
+  .work-detail-container {
+    padding: 2rem 2rem 2rem; 
+    min-height: auto;
+  }
+  .detail-title-img-wrap {
+    height: 500px;
+  }
+  
+  .detail-title-text {
+    left: 1rem;
+    max-width: 90%;
+    top: 2rem;
+    transform: none;
+    padding: 1rem;
+  }
+  .detail-title-text h4 {
+    font-size: var(--size-24px);
+  }
+  .detail-btn-wrap {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  .detail-btn {
+    width: 100%;
+    padding: 0.75rem 2rem;
+    text-align: center;
+  }
+  .close-btn {
+    top: 0.5rem; 
+    right: 1rem;
+    font-size: var(--size-24px); 
+  }
+  .detail-btn-wrap {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  .detail-btn {
+    width: 100%;
+    padding: 0.75rem 2rem; 
   }
 }
