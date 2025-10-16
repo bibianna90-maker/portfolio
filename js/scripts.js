@@ -12,7 +12,7 @@ const workDetailsData = {
    mainTarget: "시장을 보기 힘든 직장인, 가성비 신선한 야채를 찾는 소가구",
    designInsights: "브랜드 시그니처 컬러와 제품 이미지를 강조하고 크래프트지 유사 색상으로<br> 친환경 가치를 투영하는 동시에, 이모지와 아이콘으로 친근감을 높이고<br> 심플한 고딕 서체와 간결한 구조로 정보의 신뢰도와 가독성을<br> 극대화하여 디자인하였습니다.",
    bodyBgImg: "./img/modal_uglyus_insights.jpg",
-   fullDetailImg: "./img/uglyus_top_mockup.png", // 👈 상단 Flexbox 이미지 경로
+   fullDetailImg: "./img/uglyus_keyword.png", 
    buttons: [
    { text: "VIEW", link: "링크_URL_1" },
    ],
@@ -23,13 +23,12 @@ const workDetailsData = {
    "./img/modal_uglyus_content-04.jpg",
    "./img/modal_uglyus_content-05.jpg",
    "./img/modal_uglyus_content-06.jpg",
-   "./img/modal_uglyus_content-07.jpg",
    ],
   },
   
    "Cruise": {
    title: "Lotte Tour",
-   category: "TRAVEL / 롯데관광 크루즈 상세페이지", // 임시 카테고리
+   category: "CONTENTS / 동남아 크루즈 투어 여행 프로모션",
    tool: "Figma, Photoshop",
    participation: "100% 개인 프로젝트 | 2025",
    concept: "세계 각지의 여행지를 편안하고 고급스럽게 즐기는 프리미엄 여행 서비스",
@@ -48,6 +47,7 @@ const workDetailsData = {
    "./img/uglyus_bottom_img_3.jpg", // 임시 이미지
    ],
   },
+
    "Statue": {
   title: "Oh! My Down There",
   // ... (나머지 항목들도 필요한 데이터 채워야 함)
@@ -130,84 +130,84 @@ const workDetailsData = {
   document.body.style.overflow = 'auto'; 
   }
   
-  // ----------------------------------------------------
-  // 5. JSON 기반 내용 로딩 함수 (HTML 템플릿 포함)
-  // ----------------------------------------------------
-  function loadWorkDetail(titleKey) {
-  const data = workDetailsData[titleKey]; 
-  
-  if (!data) {
-  modalBodyContainer.innerHTML = "작품 정보를 찾을 수 없습니다.";
-  return;
-  }
-  // 1. 버튼 HTML 생성
-  let buttonHTML = '';
-  if (data.buttons && data.buttons.length > 0) {
-  data.buttons.forEach(btn => {
-  buttonHTML += `<a href="${btn.link}" target="_blank" class="detail-btn">${btn.text}</a>`;
+// ----------------------------------------------------
+// 5. JSON 기반 내용 로딩 함수 (HTML 템플릿 포함)
+// ⭐️ 이 함수는 전역으로 정의되어야 합니다. (DOMContentLoaded 밖으로 이동) ⭐️
+// ----------------------------------------------------
+function loadWorkDetail(titleKey) {
+const data = workDetailsData[titleKey]; 
+
+if (!data) {
+modalBodyContainer.innerHTML = "작품 정보를 찾을 수 없습니다.";
+return;
+}
+// 1. 버튼 HTML 생성 (변화 없음)
+let buttonHTML = '';
+if (data.buttons && data.buttons.length > 0) {
+data.buttons.forEach(btn => {
+buttonHTML += `<a href="${btn.link}" target="_blank" class="detail-btn">${btn.text}</a>`;
+});
+buttonHTML = `<div class="detail-btn-wrap">${buttonHTML}</div>`;
+}
+// 2. 하단 이미지 HTML 생성 (변화 없음)
+let bottomImagesHTML = '';
+if (data.bottomImages && data.bottomImages.length > 0) {
+ data.bottomImages.forEach(imgSrc => {
+bottomImagesHTML += `<img src="${imgSrc}" alt="${data.title} 하단 이미지" class="detail-bottom-img">`;
+});
+bottomImagesHTML = `<div class="detail-bottom-img-wrap">${bottomImagesHTML}</div>`;
+}
+
+// ⭐️ 최종 HTML 템플릿 (이 부분은 올바름) ⭐️
+const contentHTML = `
+<div class="detail-title-img-wrap" style="background-image: url(${data.headerImg});">
+<div class="detail-title-text">
+<h4 class="e-txt">${data.title}</h4>
+
+<p class="category detail-label-group">
+<strong>CONTENTS /</strong> ${data.category.split('/')[1].trim()}
+</p> 
+<hr style="border-color: rgba(255,255,255,0.4); margin: 1rem 0;">
+
+<p class="tool detail-label-group">
+<strong>TOOL</strong> <br> ${data.tool}
+</p> 
+
+<p class="participation detail-label-group">
+<strong>PARTICIPATION</strong> <br> ${data.participation}
+</p>
+
+<p class="concept-explain detail-label-group" style="margin-top: 1rem;">
+<strong>CONCEPT EXPLAIN</strong> <br> ${data.concept}
+</p>
+
+${buttonHTML}
+</div>
+</div>
+<div class="work-detail-container" style="background-image: url(${data.bodyBgImg});">
+
+<div class="detail-flex-content-wrap"> 
+
+<div class="detail-text-content-only">
+<p class="detail-label-group" style="margin-top: 0;"> 
+<strong>MAIN TARGET</strong><br>
+${data.mainTarget}
+</p>
+
+<p class="detail-label-group">
+<strong>DESIGN INSIGHTS</strong><br>
+${data.designInsights}
+</p>
+ 
+ <div class="detail-keyword-img-wrap">
+ <img src="${data.fullDetailImg}" alt="${data.title} 키워드 이미지" class="detail-keyword-img">
+ </div>
+</div>
+
+</div>
+</div>
+${bottomImagesHTML} `;
+
+modalBodyContainer.innerHTML = contentHTML.trim();
+}
   });
-  buttonHTML = `<div class="detail-btn-wrap">${buttonHTML}</div>`;
-  }
-  // 2. 하단 이미지 HTML 생성
-  let bottomImagesHTML = '';
-  if (data.bottomImages && data.bottomImages.length > 0) {
-  data.bottomImages.forEach(imgSrc => {
-  bottomImagesHTML += `<img src="${imgSrc}" alt="${data.title} 하단 이미지" class="detail-bottom-img">`;
-  });
-  bottomImagesHTML = `<div class="detail-bottom-img-wrap">${bottomImagesHTML}</div>`;
-  }
-  
-  // ⭐️ 최종 HTML 템플릿: detail-flex-content-wrap 구조 포함 ⭐️
-  const contentHTML = `
-  <div class="detail-title-img-wrap" style="background-image: url(${data.headerImg});">
-  <div class="detail-title-text">
-  <h4 class="e-txt">${data.title}</h4>
-  
-  <p class="category detail-label-group">
-  <strong>CONTENTS /</strong> ${data.category.split('/')[1].trim()}
-  </p> 
-  <hr style="border-color: rgba(255,255,255,0.4); margin: 1rem 0;">
-  
-  <p class="tool detail-label-group">
-  <strong>TOOL</strong> <br> ${data.tool}
-  </p> 
-  
-  <p class="participation detail-label-group">
-  <strong>PARTICIPATION</strong> <br> ${data.participation}
-  </p>
-  
-  <p class="concept-explain detail-label-group" style="margin-top: 1rem;">
-  <strong>CONCEPT EXPLAIN</strong> <br> ${data.concept}
-  </p>
-  
-  ${buttonHTML}
-  </div>
-  </div>
-  <div class="work-detail-container" style="background-image: url(${data.bodyBgImg});">
-  
-  <div class="detail-flex-content-wrap"> 
-  
-  <div class="detail-text-content-only">
-  <p class="detail-label-group" style="margin-top: 0;"> 
-  <strong>MAIN TARGET</strong><br>
-  ${data.mainTarget}
-  </p>
-  
-  <p class="detail-label-group">
-  <strong>DESIGN INSIGHTS</strong><br>
-  ${data.designInsights}
-  </p>
-  </div>
-  
-  <div class="detail-main-img-wrap">
-  <img src="${data.fullDetailImg}" alt="${data.title} 상세 이미지" class="detail-main-img"> 
-  </div>
-  
-  </div>
-  </div>
-  ${bottomImagesHTML} `;
-  
-  modalBodyContainer.innerHTML = contentHTML.trim();
-  
-  } 
-  }); // ⭐️ document.addEventListener('DOMContentLoaded', ...의 마지막 닫는 괄호! ⭐️

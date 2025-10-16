@@ -522,7 +522,7 @@
   background-repeat: no-repeat; /* 이미지 반복 방지 */
   position: relative; /* 내부 요소의 z-index 기준 설정 (필요 시) */
 
-  min-height: 324px;
+  min-height: 560px;
   height: auto;
 }
 /* 타이틀 이미지 섹션 (Hands on Box) */
@@ -546,11 +546,6 @@
 .detail-title-text h4 {
     font-size: var(--size-32px);
     font-weight: var(--bold);
-}
-.detail-main-img {
-    width: 100%;
-    height: auto;
-    display: block;
 }
 .close-btn {
   position: absolute;
