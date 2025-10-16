@@ -82,7 +82,7 @@
     max-width: none; 
   }
   .marqueeBox {
-    height: 5.125rem;
+    padding: 0.5rem 10px;
   }
   .marqueeBox span {
     font-size: var(--size-28px);
