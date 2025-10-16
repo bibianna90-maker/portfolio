@@ -73,7 +73,7 @@ nav h1 {
   width: 7.875rem; 
   background-color: var(--foot-bg);
   color: var(--main-color);
-  padding: 0.5rem 0.9375ren;
+  padding: 0.5rem 0.9375rem;
   border-radius: 6px;
   font-size: var(--size-16px);
   font-weight: var(--medium);
