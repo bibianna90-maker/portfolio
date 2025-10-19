@@ -366,7 +366,7 @@
 /* portfolio */
 .portfolio-section-wrap {
   width: 100%;
-  padding: 5.625rem 0 0;
+  padding: 5.625rem 0 5.625rem 0;
   display: flex; 
   flex-direction: column;
   background-color: var(--bg-color2);
