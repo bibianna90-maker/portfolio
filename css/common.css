@@ -82,7 +82,7 @@ nav h1 {
   transition: background-color 0.2s;
 }
 .btn-download:hover {
-  background-color: #e0b0b0;
+  background-color: var(--white);
   font-weight: var(--semibold);
 }
 @media screen and (max-width: 888px) {
@@ -142,15 +142,206 @@ nav h1 {
 /* 푸터 */
 .footer-wrap {
   background-color: var(--foot-bg);
-  width: 100%;
-  padding: 4rem 0 2rem;
+  padding-top: 3rem; 
+  padding-bottom: 3rem; 
   color: var(--white);
+  position: relative;
 }
 .footer-container {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; 
   align-items: flex-start;
-  position: relative;
-  padding: 0 7.5rem;
-  min-height: 20rem;
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+  min-height: 25rem;
+  width: 100%; 
+}
+.contact-title {
+  text-transform: uppercase;
+  font-size: var(--size-24px);
+  font-weight: var(--semibold);
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+.text-logo-wrap {
+  position: absolute; 
+  right: 7.5rem;
+  top: 3rem;
+  width: auto;
+  text-align: right;
+  z-index: 10;
+}
+.foot_logo {
+  width: 11.25rem; 
+  height: 7.875rem;
+  opacity: 0.6;
+  fill: var(--white);
+  display: block;
+}
+.footer-left-group { 
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  padding-right: 0; 
+  min-height: auto; 
+}
+.contact-info-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 7.5rem;
+}
+.contact-details {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+.qr-code-img {
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--white);
+  border-radius: 4px;
+  display: block;
+}
+.contact-text-group {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--size-14px);
+}
+.kakao-btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: var(--size-12px);
+  font-weight: var(--semibold);
+  text-align: center;
+  border-radius: 4px;
+  background-color: var(--main-color); 
+  color: var(--white);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.kakao-btn:hover {
+  background-color: var(--white); 
+  color: var(--main-color);
+}
+.contact-location,
+.contact-email,
+.kakao-btn {
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+.initial-logo-wrap {
+  text-align: left; 
+  margin-bottom: 1rem;
+}
+.foot_symbol {
+  width: 2.45rem; 
+  height: 4.77rem; 
+  opacity: 0.4;
+  display: block;
+}
+.copyright-section {
+  width: auto;
+  text-align: left;
+  flex-grow: 1;
+}
+.copyright-text {
+  font-size: 0.75rem;
+  margin-bottom: 0;
+  text-align: left;
+  line-height: 1.6;
+  opacity: 0.5;
+}
+@media (max-width: 1100px) {
+  .footer-container {
+    padding-left: 2.5rem; 
+    padding-right: 2.5rem; 
+  }
+  .text-logo-wrap {
+    right: 2.5rem; 
+  }
+}
+@media screen and (max-width: 888px) {
+  .footer-wrap {
+    padding: 2rem 0; 
+    padding-bottom: 2rem; 
+  }
+  .footer-container {
+    flex-direction: column; 
+    align-items: flex-start;
+    padding-left: 1.25rem; 
+    padding-right: 1.25rem; 
+    min-height: auto;
+  }
+  .text-logo-wrap {
+    position: static; 
+    order: 1; 
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+    text-align: left;
+  }
+  .foot_logo {
+    width: 10rem; 
+    height: auto;
+    opacity: 0.9;
+    margin: 0;
+  }
+  .footer-left-group {
+    order: 2; 
+    width: 100%;
+    align-items: flex-start;
+  }
+  .contact-info-wrap {
+    margin-bottom: 2rem; 
+    order: 1; 
+    gap: 1rem;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .contact-title {
+    font-size: var(--size-18px);
+    margin-bottom: 0;
+  }
+  .contact-details {
+    flex-direction: row; 
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+  .qr-code-img { width: 6.5rem; height: 6.5rem; }
+  .contact-text-group { 
+    gap: 0.3rem;
+    align-items: flex-start;
+  }
+  .kakao-btn { 
+    margin-top: 1.25rem;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .logo-and-copyright-wrap {
+    order: 2; 
+    flex-direction: column; 
+    align-items: flex-start;
+    margin-top: 6rem;
+  }
+  .initial-logo-wrap {
+    margin-right: 0;
+    margin-bottom: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .copyright-section {
+    flex-grow: 1;
+    text-align: left;
+  }
+  .copyright-text {
+    font-size: 0.65rem;
+    text-align: left;
+  }
 }

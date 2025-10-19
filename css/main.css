@@ -602,7 +602,7 @@
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 2rem; /* 이미지 간 간격이 필요하다면 여기에 추가 */
+    margin-bottom: 0; /* 이미지 간 간격이 필요하다면 여기에 추가 */
 }
 .detail-label-group {
   margin-bottom: 1.5rem; 
@@ -629,7 +629,6 @@
   .portfolio-container {
     padding: 0 1rem;
   }
-  /*  필터 래퍼 스크롤 기능*/
   .filter-wrap {
     justify-content: flex-start;
     overflow-x: auto;
@@ -646,6 +645,16 @@
     grid-template-columns: 1fr;
     gap: 2rem 0;
   }
+  .filter-menu-wrap {
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 1rem;
+    padding-bottom: 0.5rem;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem; 
+  }
   .filter-item {
     font-size: var(--size-14px);
   }
@@ -655,20 +664,33 @@
     margin: 1rem auto;
     max-width: none;
   }
-  /* 모달 상세 컨테이너*/
   .work-detail-container {
-    padding: 3rem 2rem 5rem;
+    padding: 2rem 2rem 2rem; 
     min-height: auto;
   }
+  .detail-title-img-wrap {
+    height: 500px;
+  }
+  
   .detail-title-text {
-    left: 2rem; 
+    left: 1rem;
     max-width: 90%;
-    top: 3rem;
+    top: 2rem;
     transform: none;
     padding: 1rem;
   }
   .detail-title-text h4 {
     font-size: var(--size-24px);
+  }
+  .detail-btn-wrap {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  .detail-btn {
+    width: 100%;
+    padding: 0.75rem 2rem;
+    text-align: center;
   }
   .close-btn {
     top: 0.5rem; 
@@ -679,11 +701,9 @@
     flex-direction: column;
     gap: 0.5rem;
     margin-top: 2rem;
-    margin-bottom: 0;
   }
   .detail-btn {
     width: 100%;
     padding: 0.75rem 2rem; 
-    text-align: center;
   }
 }
