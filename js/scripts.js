@@ -10,7 +10,7 @@ const workDetailsData = {
    concept: "고객의 건강을 위한 친환경 채소를 실속 있는 장보기로 전달하는 서비스",
    headerImg: "./img/modal_uglyus_title.jpg",
    mainTarget: "시장을 보기 힘든 직장인, 가성비 신선한 야채를 찾는 소가구",
-   designInsights: "브랜드 시그니처 컬러와 제품 이미지를 강조하고 크래프트지 유사 색상으로<br> 친환경 가치를 투영하는 동시에, 이모지와 아이콘으로 친근감을 높이고<br> 심플한 고딕 서체와 간결한 구조로 정보의 신뢰도와 가독성을<br> 극대화하여 디자인하였습니다.",
+   designInsights: "브랜드 시그니처 컬러와 제품 이미지를 강조하고 크래프트지 유사 색상으로 친환경 가치를 투영하는 동시에, 이모지와 아이콘으로 친근감을 높이고 심플한 고딕 서체와 간결한 구조로 정보의 신뢰도와 가독성을 극대화하여 디자인하였습니다.",
    bodyBgImg: "./img/modal_uglyus_insights.jpg",
    fullDetailImg: "./img/uglyus_keyword.png", 
    buttons: [
@@ -36,7 +36,7 @@ const workDetailsData = {
    mainTarget: "은퇴 후 여유로운 여행을 원하는 장년층, 가족 단위 여행객",
    designInsights: "고급스러운 이미지와 명확한 정보를 강조하여 신뢰도를 높이고, 상세 여정 정보를 시각적으로 구성했습니다.", // 임시 텍스트
    bodyBgImg: "./img/lotte_tour_insights.jpg", // 임시 배경 이미지 경로
-   fullDetailImg: "./img/lotte_tour_top_mockup.jpg", // 👈 상단 Flexbox 이미지 경로
+   fullDetailImg: "./img/lotte_tour_top_mockup.jpg", // 👈상단 Flexbox 이미지 경로
    buttons: [
    { text: "VIEW", link: "링크_URL_1" },
    { text: "WEBSITE", link: "링크_URL_2" }
@@ -52,7 +52,25 @@ const workDetailsData = {
   title: "Oh! My Down There",
   // ... (나머지 항목들도 필요한 데이터 채워야 함)
   fullDetailImg: "./img/statue_full_detail.jpg"
-   }
+   },
+  
+   "Chaime": {
+   title: "Chaime",
+   category: "BRAND/차임 B.I",
+   tool: "Illustrator, Photoshop, Figma",
+   participation: "100% 개인 프로젝트 | 2025",
+   concept: "고객의 일상에서 취향을 담은 차 한 잔이 주는 잔잔한 울림의 티 라이프스타일 브랜드",
+   headerImg: "./img/modal_uglyus_title.jpg",
+   mainTarget: "프리미엄 라이프스타일을 지향하는 25~40대 여성, 웰빙 & 건강을 중시하는 직장인",
+   designInsights: "CHAIME은 자연의 울림과 시간을 모티프로 한 현대적 티 라이프스타일 브랜드로, 정제된 산세리프 워드마크와 곡선적 심볼을 통해 감각적이면서도 세련된 니치 럭셔리 이미지를 구축하였습니다. 따뜻한 브라운 컬러 톤을 중심으로 내추럴하고 품격 있는 브랜드 무드를 형성하며, 기존 티 브랜드와 차별화된 모던한 정체성으로 디자인하였습니다.",
+   bodyBgImg: "./img/modal_chaime_insights.jpg",
+   fullDetailImg: "./img/chaime_keyword.png", 
+   bottomImages: [
+   "./img/modal_chaime_content-01.jpg",
+   "./img/modal_chaime_content-02.jpg",
+   "./img/modal_chaime_content-03.jpg",    
+   ],
+  },
   };
   
   
