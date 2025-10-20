@@ -27,11 +27,11 @@ const workDetailsData = {
   },
   
    "Cruise": {
-   title: "Lotte Tour",
-   category: "CONTENTS / 동남아 크루즈 투어 여행 프로모션",
+   title: "Cruise Tour",
+   category: "CONTENTS / 동남아시아 크루즈 투어 여행 프로모션",
    tool: "Figma, Photoshop",
    participation: "100% 개인 프로젝트 | 2025",
-   concept: "세계 각지의 여행지를 편안하고 고급스럽게 즐기는 프리미엄 여행 서비스",
+   concept: "동남아시아 2개국(싱가포르,말레이시아) 여행지를 크루즈에서 편안하고 고급스럽게 즐기는 프리미엄 여행 서비스 프로모션",
    headerImg: "./img/lotte_tour_title.jpg", // 임시 이미지 경로
    mainTarget: "은퇴 후 여유로운 여행을 원하는 장년층, 가족 단위 여행객",
    designInsights: "고급스러운 이미지와 명확한 정보를 강조하여 신뢰도를 높이고, 상세 여정 정보를 시각적으로 구성했습니다.", // 임시 텍스트
@@ -39,7 +39,6 @@ const workDetailsData = {
    fullDetailImg: "./img/lotte_tour_top_mockup.jpg", // 👈상단 Flexbox 이미지 경로
    buttons: [
    { text: "VIEW", link: "링크_URL_1" },
-   { text: "WEBSITE", link: "링크_URL_2" }
    ],
   bottomImages: [
    "./img/uglyus_bottom_img_1.jpg", // 임시 이미지
@@ -48,10 +47,25 @@ const workDetailsData = {
    ],
   },
 
-   "Statue": {
-  title: "Oh! My Down There",
-  // ... (나머지 항목들도 필요한 데이터 채워야 함)
-  fullDetailImg: "./img/statue_full_detail.jpg"
+   "Yzone": {
+    title: "Oh! My Down There",
+    category: "CONTENTS/오! 마이다운데얼 제품 상세페이지",
+    tool: "Illustrator, Photoshop,",
+    participation: "80% 팀 프로젝트 | 2019",
+    concept: "동남아시아 2개국(싱가포르,말레이시아) 여행지를 크루즈에서 편안하고 고급스럽게 즐기는 프리미엄 여행 서비스 프로모션",
+    headerImg: "./img/lotte_tour_title.jpg", // 임시 이미지 경로
+    mainTarget: "비키니/브라질리언 제모 후 집중 관리를 원하는 고객",
+    designInsights: "고급스러운 이미지와 명확한 정보를 강조하여 신뢰도를 높이고, 상세 여정 정보를 시각적으로 구성했습니다.", // 임시 텍스트
+    bodyBgImg: "./img/lotte_tour_insights.jpg", // 임시 배경 이미지 경로
+    fullDetailImg: "./img/lotte_tour_top_mockup.jpg", // 👈상단 Flexbox 이미지 경로
+    buttons: [
+    { text: "VIEW", link: "링크_URL_1" },
+    ],
+   bottomImages: [
+    "./img/uglyus_bottom_img_1.jpg", // 임시 이미지
+    "./img/uglyus_bottom_img_2.jpg", // 임시 이미지
+    "./img/uglyus_bottom_img_3.jpg", // 임시 이미지
+    ],
    },
   
    "Chaime": {
@@ -71,6 +85,28 @@ const workDetailsData = {
    "./img/modal_chaime_content-03.jpg",    
    ],
   },
+
+  "my": {
+    title: "Cruise Tour",
+    category: "CONTENTS / 동남아시아 크루즈 투어 여행 프로모션",
+    tool: "Figma, Photoshop",
+    participation: "100% 개인 프로젝트 | 2025",
+    concept: "세계 각지의 여행지를 편안하고 고급스럽게 즐기는 프리미엄 여행 서비스",
+    headerImg: "./img/lotte_tour_title.jpg", // 임시 이미지 경로
+    mainTarget: "은퇴 후 여유로운 여행을 원하는 장년층, 가족 단위 여행객",
+    designInsights: "고급스러운 이미지와 명확한 정보를 강조하여 신뢰도를 높이고, 상세 여정 정보를 시각적으로 구성했습니다.", // 임시 텍스트
+    bodyBgImg: "./img/lotte_tour_insights.jpg", // 임시 배경 이미지 경로
+    fullDetailImg: "./img/lotte_tour_top_mockup.jpg", // 👈상단 Flexbox 이미지 경로
+    buttons: [
+    { text: "VIEW", link: "링크_URL_1" },
+    { text: "WEBSITE", link: "링크_URL_2" }
+    ],
+   bottomImages: [
+    "./img/uglyus_bottom_img_1.jpg", // 임시 이미지
+    "./img/uglyus_bottom_img_2.jpg", // 임시 이미지
+    "./img/uglyus_bottom_img_3.jpg", // 임시 이미지
+    ],
+   },
   };
   
   
