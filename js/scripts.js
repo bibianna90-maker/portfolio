@@ -84,7 +84,10 @@ const workDetailsData = {
    "./img/modal_chaime_content-02.jpg",
    "./img/modal_chaime_content-03.jpg",
    "./img/modal_chaime_content-04.jpg",
-   "./img/modal_chaime_content-06.jpg",    
+   "./img/modal_chaime_content-06.jpg",
+   "./img/modal_chaime_content-07.jpg",
+   "./img/modal_chaime_content-08.jpg",
+   "./img/modal_chaime_content-09.jpg",     
    ],
   },
 
