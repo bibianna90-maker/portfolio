@@ -32,7 +32,7 @@ const workDetailsData = {
    tool: "Figma, Photoshop",
    participation: "100% 개인 프로젝트 | 2025",
    concept: "동남아시아 2개국(싱가포르,말레이시아) 여행지를 크루즈에서 편안하고 고급스럽게 즐기는 프리미엄 여행 서비스 프로모션",
-   headerImg: "./img/lotte_tour_title.jpg", // 임시 이미지 경로
+   headerImg: "./img/modal_cruisetour_title.jpg", // 임시 이미지 경로
    mainTarget: "은퇴 후 여유로운 여행을 원하는 장년층, 가족 단위 여행객",
    designInsights: "고급스러운 이미지와 명확한 정보를 강조하여 신뢰도를 높이고, 상세 여정 정보를 시각적으로 구성했습니다.", // 임시 텍스트
    bodyBgImg: "./img/lotte_tour_insights.jpg", // 임시 배경 이미지 경로
@@ -74,7 +74,7 @@ const workDetailsData = {
    tool: "Illustrator, Photoshop, Figma",
    participation: "100% 개인 프로젝트 | 2025",
    concept: "고객의 일상에서 취향을 담은 차 한 잔이 주는 잔잔한 울림의 티 라이프스타일 브랜드",
-   headerImg: "./img/modal_uglyus_title.jpg",
+   headerImg: "./img/modal_chaime_title.jpg",
    mainTarget: "프리미엄 라이프스타일을 지향하는 25~40대 여성, 웰빙 & 건강을 중시하는 직장인",
    designInsights: "CHAIME은 자연의 울림과 시간을 모티프로 한 현대적 티 라이프스타일 브랜드로, 정제된 산세리프 워드마크와 곡선적 심볼을 통해 감각적이면서도 세련된 니치 럭셔리 이미지를 구축하였습니다. 따뜻한 브라운 컬러 톤을 중심으로 내추럴하고 품격 있는 브랜드 무드를 형성하며, 기존 티 브랜드와 차별화된 모던한 정체성으로 디자인하였습니다.",
    bodyBgImg: "./img/modal_chaime_insights.jpg",
@@ -82,7 +82,9 @@ const workDetailsData = {
    bottomImages: [
    "./img/modal_chaime_content-01.jpg",
    "./img/modal_chaime_content-02.jpg",
-   "./img/modal_chaime_content-03.jpg",    
+   "./img/modal_chaime_content-03.jpg",
+   "./img/modal_chaime_content-04.jpg",
+   "./img/modal_chaime_content-06.jpg",    
    ],
   },
 
