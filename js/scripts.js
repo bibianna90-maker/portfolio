@@ -97,18 +97,17 @@ const workDetailsData = {
     tool: "Figma, Photoshop",
     participation: "75% 팀 프로젝트 | 2025",
     concept: "주문기능을 직관적으로 단순화하고 정확한 알림 제공해 반복 구매 고객의 편의성과 장기적 앱 활용 가치를 높인다.",
-    headerImg: "./img/modal_hollys_title.jpg", // 임시 이미지 경로
-    mainTarget: "은퇴 후 여유로운 여행을 원하는 장년층, 가족 단위 여행객",
-    designInsights: "할리스의 장점은 기존 로고가 주는 고급스러운 아이덴티티이며, 단점은 직관적이지 않고 복잡한 UI라고 생각했습니다. 따라서 브랜드의 강점은 유지하면서 단점을 보완하여, 고급스럽고 여유로운 분위는 살리되, 사용자가 보다 쉽게 접근할 수 있도록 심플하고 직관적인 UI 디자인을 기획하였습니다.", // 임시 텍스트
+    headerImg: "./img/modal_hollys_title.jpg",
+    mainTarget: "출퇴근 시간대에 스마트폰을 활용해 효율적으로 커피를 테이크아웃하는 20~40대 여성 직장인",
+    designInsights: "할리스의 장점은 기존 로고가 주는 고급스러운 아이덴티티이며, 단점은 직관적이지 않고 복잡한 UI라고 생각했습니다. 따라서 브랜드의 강점은 유지하면서 단점을 보완하여, 고급스럽고 여유로운 분위는 살리되, 사용자가 보다 쉽게 접근할 수 있도록 심플하고 직관적인 UI 디자인을 기획하였습니다.",
     bodyBgImg: "./img/lotte_tour_insights.jpg", // 임시 배경 이미지 경로
-    fullDetailImg: "./img/lotte_tour_top_mockup.jpg", // 👈상단 Flexbox 이미지 경로
+    fullDetailImg: "./img/lotte_tour_top_mockup.jpg", //임시 이미지
     buttons: [
     { text: "VIEW", link: "링크_URL_2" },
     ],
    bottomImages: [
-    "./img/uglyus_bottom_img_1.jpg", // 임시 이미지
-    "./img/uglyus_bottom_img_2.jpg", // 임시 이미지
-    "./img/uglyus_bottom_img_3.jpg", // 임시 이미지
+    "./img/modal_hollys_content-01.jpg", 
+    "./img/modal_hollys_content-02.jpg", 
     ],
    },
   };
