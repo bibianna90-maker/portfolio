@@ -535,7 +535,7 @@
   overflow: hidden;
   position: relative;
   color: var(--white);
-  background-color: #333; 
+  background-color: #333;
 }
 .detail-title-text {
   position: absolute;
@@ -616,7 +616,7 @@
 }
 @media (max-width: 1200px) {
     .portfolio-container {
-        padding: 0 5rem;
+        padding: 0 2.5rem;
     }
 }
 @media (max-width: 992px) {
@@ -625,7 +625,7 @@
     gap: 2rem 1rem; 
     }
   .portfolio-container {
-    padding: 0 2rem;
+    padding: 0 2.5rem;
   }
   .portfolio-section-wrap {
     padding-top: 3rem;
@@ -633,14 +633,14 @@
 }
 @media (max-width: 576px) {
   .portfolio-container {
-    padding: 0 1rem;
+    padding: 0 1.25rem;
   }
   .filter-wrap {
     justify-content: flex-start;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 1.25rem;
     padding-bottom: 0.5rem;
     margin-bottom: 2rem;
   }
@@ -655,10 +655,9 @@
     justify-content: flex-start;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding: 0 1rem;
+    padding: 0 1.25rem;
     padding-bottom: 0.5rem;
     white-space: nowrap;
-    padding-bottom: 0.5rem;
     margin-bottom: 2rem; 
   }
   .filter-item {
@@ -675,11 +674,11 @@
     min-height: auto;
   }
   .detail-title-img-wrap {
-    height: 550px;
+    height: 55vh;
   }
   
   .detail-title-text {
-    left: 1rem;
+    left: 1.25rem;
     max-width: 90%;
     top: 2rem;
     transform: none;
@@ -700,7 +699,7 @@
   }
   .close-btn {
     top: 0.5rem; 
-    right: 1rem;
+    right: 1.25rem;
     font-size: var(--size-24px); 
   }
   .detail-btn-wrap {

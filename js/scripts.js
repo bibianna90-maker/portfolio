@@ -38,7 +38,7 @@ const workDetailsData = {
    bodyBgImg: "./img/lotte_tour_insights.jpg", // 임시 배경 이미지 경로
    fullDetailImg: "./img/lotte_tour_top_mockup.jpg", // 👈상단 Flexbox 이미지 경로
    buttons: [
-   { text: "VIEW", link: "링크_URL_1" },
+   { text: "VIEW", link: "https://www.figma.com/proto/UZe2iyBFTpI7LLQ9lQ13fP/%EB%B0%95%EC%84%B8%EB%AF%BC_%EC%97%AC%ED%96%89%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98?page-id=1%3A2&node-id=213-2808&viewport=-984%2C179%2C0.25&t=USxYY5XA9rZ7y9rf-1&scaling=scale-down-width&content-scaling=fixed" },
    ],
   bottomImages: [
    "./img/uglyus_bottom_img_1.jpg", // 임시 이미지
@@ -266,5 +266,67 @@ ${data.designInsights}
 ${bottomImagesHTML} `;
 
 modalBodyContainer.innerHTML = contentHTML.trim();
+
 }
+});
+
+//헤더 스크롤 동작
+
+$(function(){
+  const $menuLinks = $('.nav-list a');
+  const $contentSections = $('section[id], .portfolio-section-wrap[id]'); 
+  const HEADER_HEIGHT = $('header').outerHeight() || 80;
+  
+  $menuLinks.on('click', function(event){
+    event.preventDefault(); // 기본 링크 이동 이벤트 제거
+  
+    let targetId = $(this).attr('href');
+    
+    if (targetId === '#' || targetId === undefined) {
+        targetId = '#' + $(this).text().toLowerCase().trim().replace(/[^a-z0-9]+/g, ''); 
+    }
+
+    if (targetId.startsWith('#') && $(targetId).length) {
+        const secDistance = $(targetId).offset().top - HEADER_HEIGHT; 
+
+        $('html, body').stop(true).animate({
+            scrollTop: secDistance
+        }, 600);
+    } else {
+      
+    }
   });
+
+  // ⭐️ 3. 스크롤 이벤트 핸들러 (Active 상태 변경)
+  $(window).on('scroll', function(){
+    const currentScroll = $(window).scrollTop();
+    // Fixed Header 높이를 고려하여 현재 섹션을 판단하는 기준점 설정
+    const triggerOffset = currentScroll + HEADER_HEIGHT + 20; 
+  
+    let lastActiveIndex = -1;
+  
+    // 각 섹션을 순회하며 현재 스크롤 위치를 비교
+    $contentSections.each(function(index) {
+        const $section = $(this);
+        const sectionTop = $section.offset().top;
+  
+        // 현재 섹션의 시작점(Fixed Header 높이 보정)을 지나쳤는지 확인
+        if (triggerOffset >= sectionTop) {
+            lastActiveIndex = index;
+        }
+    });
+  
+    // lastActiveIndex가 유효하면 해당 메뉴 항목을 활성화
+    if (lastActiveIndex !== -1) {
+        // 모든 메뉴의 active 클래스 제거 (<li> 기준)
+        $('.nav-list li').removeClass('active');
+        
+        // 해당 인덱스에 맞는 <li> 태그에 active 클래스 추가
+        $menuLinks.eq(lastActiveIndex).parent('li').addClass('active');
+    }
+  });
+  
+  // 페이지 로드 시 또는 새로고침 시 초기 위치에 따라 active 클래스 설정
+  $(window).trigger('scroll');
+  
+});
