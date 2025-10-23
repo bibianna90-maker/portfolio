@@ -519,14 +519,9 @@
   padding: 4.125rem 6.5rem; /* 내용 내부 패딩 */
   line-height: 1.5;
   text-align: left;
-
-  background-size: cover; /* 이미지가 컨테이너를 덮도록 설정 */
-  background-position: center; /* 이미지를 중앙에 배치 */
-  background-repeat: no-repeat; /* 이미지 반복 방지 */
-  position: relative; /* 내부 요소의 z-index 기준 설정 (필요 시) */
-
-  min-height: 560px;
+  min-height: 416px;
   height: auto;
+  background-color: #EEE6D9;
 }
 /* 타이틀 이미지 섹션 (Hands on Box) */
 .detail-title-img-wrap {

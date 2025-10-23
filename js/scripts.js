@@ -11,18 +11,12 @@ const workDetailsData = {
    headerImg: "./img/modal_uglyus_title.jpg",
    mainTarget: "시장을 보기 힘든 직장인, 가성비 신선한 야채를 찾는 소가구",
    designInsights: "브랜드 시그니처 컬러와 제품 이미지를 강조하고 크래프트지 유사 색상으로 친환경 가치를 투영하는 동시에, 이모지와 아이콘으로 친근감을 높이고 심플한 고딕 서체와 간결한 구조로 정보의 신뢰도와 가독성을 극대화하여 디자인하였습니다.",
-   bodyBgImg: "./img/modal_uglyus_insights.jpg",
    fullDetailImg: "./img/uglyus_keyword.png", 
    buttons: [
    { text: "VIEW", link: "링크_URL_1" },
    ],
   bottomImages: [
-   "./img/modal_uglyus_content-01.jpg", 
-   "./img/modal_uglyus_content-02.jpg", 
-   "./img/modal_uglyus_content-03.jpg", 
-   "./img/modal_uglyus_content-04.jpg",
-   "./img/modal_uglyus_content-05.jpg",
-   "./img/modal_uglyus_content-06.jpg",
+   "./img/modal_uglyus_content.jpg", 
    ],
   },
   
@@ -35,15 +29,12 @@ const workDetailsData = {
    headerImg: "./img/modal_cruisetour_title.jpg", // 임시 이미지 경로
    mainTarget: "은퇴 후 여유로운 여행을 원하는 장년층, 가족 단위 여행객",
    designInsights: "고급스러운 이미지와 명확한 정보를 강조하여 신뢰도를 높이고, 상세 여정 정보를 시각적으로 구성했습니다.", // 임시 텍스트
-   bodyBgImg: "./img/lotte_tour_insights.jpg", // 임시 배경 이미지 경로
    fullDetailImg: "./img/lotte_tour_top_mockup.jpg", // 👈상단 Flexbox 이미지 경로
    buttons: [
    { text: "VIEW", link: "https://www.figma.com/proto/UZe2iyBFTpI7LLQ9lQ13fP/%EB%B0%95%EC%84%B8%EB%AF%BC_%EC%97%AC%ED%96%89%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98?page-id=1%3A2&node-id=213-2808&viewport=-984%2C179%2C0.25&t=USxYY5XA9rZ7y9rf-1&scaling=scale-down-width&content-scaling=fixed" },
    ],
   bottomImages: [
    "./img/uglyus_bottom_img_1.jpg", // 임시 이미지
-   "./img/uglyus_bottom_img_2.jpg", // 임시 이미지
-   "./img/uglyus_bottom_img_3.jpg", // 임시 이미지
    ],
   },
 
@@ -56,15 +47,12 @@ const workDetailsData = {
     headerImg: "./img/lotte_tour_title.jpg", // 임시 이미지 경로
     mainTarget: "비키니/브라질리언 제모 후 집중 관리를 원하는 고객",
     designInsights: "고급스러운 이미지와 명확한 정보를 강조하여 신뢰도를 높이고, 상세 여정 정보를 시각적으로 구성했습니다.", // 임시 텍스트
-    bodyBgImg: "./img/lotte_tour_insights.jpg", // 임시 배경 이미지 경로
     fullDetailImg: "./img/lotte_tour_top_mockup.jpg", // 👈상단 Flexbox 이미지 경로
     buttons: [
     { text: "VIEW", link: "링크_URL_1" },
     ],
    bottomImages: [
     "./img/uglyus_bottom_img_1.jpg", // 임시 이미지
-    "./img/uglyus_bottom_img_2.jpg", // 임시 이미지
-    "./img/uglyus_bottom_img_3.jpg", // 임시 이미지
     ],
    },
   
@@ -77,17 +65,9 @@ const workDetailsData = {
    headerImg: "./img/modal_chaime_title.jpg",
    mainTarget: "프리미엄 라이프스타일을 지향하는 25~40대 여성, 웰빙 & 건강을 중시하는 직장인",
    designInsights: "CHAIME은 자연의 울림과 시간을 모티프로 한 현대적 티 라이프스타일 브랜드로, 정제된 산세리프 워드마크와 곡선적 심볼을 통해 감각적이면서도 세련된 니치 럭셔리 이미지를 구축하였습니다. 따뜻한 브라운 컬러 톤을 중심으로 내추럴하고 품격 있는 브랜드 무드를 형성하며, 기존 티 브랜드와 차별화된 모던한 정체성으로 디자인하였습니다.",
-   bodyBgImg: "./img/modal_chaime_insights.jpg",
    fullDetailImg: "./img/chaime_keyword.png", 
    bottomImages: [
-   "./img/modal_chaime_content-01.jpg",
-   "./img/modal_chaime_content-02.jpg",
-   "./img/modal_chaime_content-03.jpg",
-   "./img/modal_chaime_content-04.jpg",
-   "./img/modal_chaime_content-06.jpg",
-   "./img/modal_chaime_content-07.jpg",
-   "./img/modal_chaime_content-08.jpg",
-   "./img/modal_chaime_content-09.jpg",     
+   "./img/modal_chaime_content.jpg",    
    ],
   },
 
@@ -100,7 +80,6 @@ const workDetailsData = {
     headerImg: "./img/modal_hollys_title.jpg",
     mainTarget: "출퇴근 시간대에 스마트폰을 활용해 효율적으로 커피를 테이크아웃하는 20~40대 여성 직장인",
     designInsights: "할리스의 장점은 기존 로고가 주는 고급스러운 아이덴티티이며, 단점은 직관적이지 않고 복잡한 UI라고 생각했습니다. 따라서 브랜드의 강점은 유지하면서 단점을 보완하여, 고급스럽고 여유로운 분위는 살리되, 사용자가 보다 쉽게 접근할 수 있도록 심플하고 직관적인 UI 디자인을 기획하였습니다.",
-    bodyBgImg: "./img/lotte_tour_insights.jpg", // 임시 배경 이미지 경로
     fullDetailImg: "./img/lotte_tour_top_mockup.jpg", //임시 이미지
     buttons: [
     { text: "VIEW", link: "링크_URL_2" },
