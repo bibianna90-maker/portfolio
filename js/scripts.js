@@ -32,13 +32,13 @@ const workDetailsData = {
    ],
   },
 
-   "Yzone": {
+   "Omdt": {
    title: "Oh! My Down There",
    category: "CONTENTS/오! 마이다운데얼 제품 상세페이지",
    tool: "Illustrator, Photoshop,",
    participation: "80% 팀 프로젝트 | 2021",
    concept: "동남아시아 2개국(싱가포르,말레이시아) 여행지를 크루즈에서 편안하고 고급스럽게 즐기는 프리미엄 여행 서비스 프로모션",
-   headerImg: "./img/lotte_tour_title.jpg", // 임시 이미지 경로
+   headerImg: "./img/ohmydown_there_title.jpg",
    mainTarget: "비키니/브라질리언 제모 후 집중 관리를 원하는 고객, 건강하고 아름다운 Y존을 원하는 고객, 출산 준비하는 임산부, 잦은 피부 마찰로 신경쓰이는 고객",
    designInsights: "고급스러운 이미지와 명확한 정보를 강조하여 신뢰도를 높이고, 상세 여정 정보를 시각적으로 구성했습니다.", // 임시 텍스트
    fullDetailImg: "./img/lotte_tour_top_mockup.jpg", // 👈상단 Flexbox 이미지 경로
@@ -71,7 +71,7 @@ const workDetailsData = {
     headerImg: "./img/modal_hollys_title.jpg",
     mainTarget: "출퇴근 시간대에 스마트폰을 활용해 효율적으로 커피를 테이크아웃하는 20~40대 여성 직장인",
     designInsights: "할리스의 장점은 기존 로고가 주는 고급스러운 아이덴티티이며, 단점은 직관적이지 않고 복잡한 UI라고 생각했습니다. 따라서 브랜드의 강점은 유지하면서 단점을 보완하여, 고급스럽고 여유로운 분위는 살리되, 사용자가 보다 쉽게 접근할 수 있도록 심플하고 직관적인 UI 디자인을 기획하였습니다.",
-    fullDetailImg: "./img/lotte_tour_top_mockup.jpg", //임시 이미지
+    fullDetailImg: "./img/hollys_keyword.png",
     buttons: [
     { text: "VIEW", link: "링크_URL_2" },
     ],
