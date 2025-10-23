@@ -12,10 +12,7 @@ const workDetailsData = {
    mainTarget: "시장을 보기 힘든 직장인, 가성비 신선한 야채를 찾는 소가구",
    designInsights: "브랜드 시그니처 컬러와 제품 이미지를 강조하고 크래프트지 유사 색상으로 친환경 가치를 투영하는 동시에, 이모지와 아이콘으로 친근감을 높이고 심플한 고딕 서체와 간결한 구조로 정보의 신뢰도와 가독성을 극대화하여 디자인하였습니다.",
    fullDetailImg: "./img/uglyus_keyword.png", 
-   buttons: [
-   { text: "VIEW", link: "링크_URL_1" },
-   ],
-  bottomImages: [
+   bottomImages: [
    "./img/modal_uglyus_content.jpg", 
    ],
   },
@@ -26,31 +23,25 @@ const workDetailsData = {
    tool: "Figma, Photoshop",
    participation: "100% 개인 프로젝트 | 2025",
    concept: "동남아시아 2개국(싱가포르,말레이시아) 여행지를 크루즈에서 편안하고 고급스럽게 즐기는 프리미엄 여행 서비스 프로모션",
-   headerImg: "./img/modal_cruisetour_title.jpg", // 임시 이미지 경로
+   headerImg: "./img/modal_cruisetour_title.jpg",
    mainTarget: "은퇴 후 여유로운 여행을 원하는 장년층, 가족 단위 여행객",
    designInsights: "고급스러운 이미지와 명확한 정보를 강조하여 신뢰도를 높이고, 상세 여정 정보를 시각적으로 구성했습니다.", // 임시 텍스트
-   fullDetailImg: "./img/lotte_tour_top_mockup.jpg", // 👈상단 Flexbox 이미지 경로
-   buttons: [
-   { text: "VIEW", link: "https://www.figma.com/proto/UZe2iyBFTpI7LLQ9lQ13fP/%EB%B0%95%EC%84%B8%EB%AF%BC_%EC%97%AC%ED%96%89%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98?page-id=1%3A2&node-id=213-2808&viewport=-984%2C179%2C0.25&t=USxYY5XA9rZ7y9rf-1&scaling=scale-down-width&content-scaling=fixed" },
-   ],
-  bottomImages: [
+   fullDetailImg: "./img/cruisetour_keyword.png",
+   bottomImages: [
    "./img/uglyus_bottom_img_1.jpg", // 임시 이미지
    ],
   },
 
    "Yzone": {
-    title: "Oh! My Down There",
-    category: "CONTENTS/오! 마이다운데얼 제품 상세페이지",
-    tool: "Illustrator, Photoshop,",
-    participation: "80% 팀 프로젝트 | 2019",
-    concept: "동남아시아 2개국(싱가포르,말레이시아) 여행지를 크루즈에서 편안하고 고급스럽게 즐기는 프리미엄 여행 서비스 프로모션",
-    headerImg: "./img/lotte_tour_title.jpg", // 임시 이미지 경로
-    mainTarget: "비키니/브라질리언 제모 후 집중 관리를 원하는 고객",
-    designInsights: "고급스러운 이미지와 명확한 정보를 강조하여 신뢰도를 높이고, 상세 여정 정보를 시각적으로 구성했습니다.", // 임시 텍스트
-    fullDetailImg: "./img/lotte_tour_top_mockup.jpg", // 👈상단 Flexbox 이미지 경로
-    buttons: [
-    { text: "VIEW", link: "링크_URL_1" },
-    ],
+   title: "Oh! My Down There",
+   category: "CONTENTS/오! 마이다운데얼 제품 상세페이지",
+   tool: "Illustrator, Photoshop,",
+   participation: "80% 팀 프로젝트 | 2021",
+   concept: "동남아시아 2개국(싱가포르,말레이시아) 여행지를 크루즈에서 편안하고 고급스럽게 즐기는 프리미엄 여행 서비스 프로모션",
+   headerImg: "./img/lotte_tour_title.jpg", // 임시 이미지 경로
+   mainTarget: "비키니/브라질리언 제모 후 집중 관리를 원하는 고객, 건강하고 아름다운 Y존을 원하는 고객, 출산 준비하는 임산부, 잦은 피부 마찰로 신경쓰이는 고객",
+   designInsights: "고급스러운 이미지와 명확한 정보를 강조하여 신뢰도를 높이고, 상세 여정 정보를 시각적으로 구성했습니다.", // 임시 텍스트
+   fullDetailImg: "./img/lotte_tour_top_mockup.jpg", // 👈상단 Flexbox 이미지 경로
    bottomImages: [
     "./img/uglyus_bottom_img_1.jpg", // 임시 이미지
     ],
@@ -58,7 +49,7 @@ const workDetailsData = {
   
    "Chaime": {
    title: "Chaime",
-   category: "BRAND / 차임 B.I",
+   category: "BRAND/차임 B.I",
    tool: "Illustrator, Photoshop, Figma",
    participation: "100% 개인 프로젝트 | 2025",
    concept: "고객의 일상에서 취향을 담은 차 한 잔이 주는 잔잔한 울림의 티 라이프스타일 브랜드",
@@ -73,7 +64,7 @@ const workDetailsData = {
 
   "hollys": {
     title: "Hollys",
-    category: "UIㆍUX / 할리스 간편 주문 서비스 리디자인",
+    category: "UIㆍUX / 할리스 App 간편 주문 서비스 리디자인",
     tool: "Figma, Photoshop",
     participation: "75% 팀 프로젝트 | 2025",
     concept: "주문기능을 직관적으로 단순화하고 정확한 알림 제공해 반복 구매 고객의 편의성과 장기적 앱 활용 가치를 높인다.",
@@ -143,8 +134,7 @@ const workDetailsData = {
   
   workItems.forEach(item => {
    item.addEventListener('click', () => {
-  const workTitleKey = item.dataset.title; // 예: 'Uglyus' 또는 'Cruise'
-  
+  const workTitleKey = item.dataset.title;
   // JSON 데이터를 읽어 HTML을 생성하고 삽입하는 함수 호출
   loadWorkDetail(workTitleKey);
   
@@ -220,7 +210,7 @@ const contentHTML = `
 ${buttonHTML}
 </div>
 </div>
-<div class="work-detail-container" style="background-image: url(${data.bodyBgImg});">
+<div class="work-detail-container">
 
 <div class="detail-flex-content-wrap"> 
 
