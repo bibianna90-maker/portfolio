@@ -22,10 +22,10 @@ const workDetailsData = {
    category: "CONTENTS / 동남아시아 크루즈 투어 여행 프로모션",
    tool: "Figma, Photoshop",
    participation: "100% 개인 프로젝트 | 2025",
-   concept: "동남아시아 2개국(싱가포르,말레이시아) 여행지를 크루즈에서 편안하고 고급스럽게 즐기는 프리미엄 여행 서비스 프로모션",
+   concept: "동남아시아 2개국 여행지를 크루즈에서 편안하고 고급스럽게 즐기는 프리미엄 여행 서비스 프로모션",
    headerImg: "./img/modal_cruisetour_title.jpg",
    mainTarget: "은퇴 후 여유로운 여행을 원하는 장년층, 가족 단위 여행객",
-   designInsights: "고급스러운 이미지와 명확한 정보를 강조하여 신뢰도를 높이고, 상세 여정 정보를 시각적으로 구성했습니다.", // 임시 텍스트
+   designInsights: "푸른 바다와 노을의 조화로 럭셔리하고 여유로운 크루즈 분위기를 연출합니다. 엄선된 기항지와 선내 시설 사진을 통해 크루즈 코스의 매력과 고품격을 효과적으로 전달하는 데 주력했습니다.", 
    fullDetailImg: "./img/cruisetour_keyword.png",
    bottomImages: [
    "./img/modal_cruisetour_content.jpg",
@@ -35,15 +35,17 @@ const workDetailsData = {
    "Omdt": {
    title: "Oh! My Down There",
    category: "CONTENTS/오! 마이다운데얼 제품 상세페이지",
-   tool: "Illustrator, Photoshop,",
+   tool: "Illustrator, Photoshop",
    participation: "80% 팀 프로젝트 | 2021",
-   concept: "동남아시아 2개국(싱가포르,말레이시아) 여행지를 크루즈에서 편안하고 고급스럽게 즐기는 프리미엄 여행 서비스 프로모션",
+   concept: "Oh! My down there Y존 마스크팩 공식 상세페이지",
    headerImg: "./img/ohmydown_there_title.jpg",
    mainTarget: "비키니/브라질리언 제모 후 집중 관리를 원하는 고객, 건강하고 아름다운 Y존을 원하는 고객, 출산 준비하는 임산부, 잦은 피부 마찰로 신경쓰이는 고객",
-   designInsights: "고급스러운 이미지와 명확한 정보를 강조하여 신뢰도를 높이고, 상세 여정 정보를 시각적으로 구성했습니다.", // 임시 텍스트
+   designInsights: "Oh! My down there은 Y존의 건강과 전문적인 케어를 세련되고 자신감 있는 여성의 이미지와 함께 전달합니다. 핑크와 화이트를 메인 컬러로 사용하여 민감한 부위의 케어 제품임에도 불구하고 트렌디하고 당당한 분위기를 연출합니다.",
    fullDetailImg: "./img/omdt_keyword.png",
    bottomImages: [
-    "./img/modal_omdt_content.jpg",
+    "./img/modal_omdt_content-01.jpg",
+    "./img/modal_omdt_content-02.jpg",
+    "./img/modal_omdt_content-03.jpg",
     ],
    },
   
@@ -77,7 +79,8 @@ const workDetailsData = {
     ],
    bottomImages: [
     "./img/modal_hollys_content-01.jpg", 
-    "./img/modal_hollys_content-02.jpg", 
+    "./img/modal_hollys_content-02.jpg",
+    "./img/modal_hollys_content-03.jpg",  
     ],
    },
   };
