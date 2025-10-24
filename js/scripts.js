@@ -28,7 +28,7 @@ const workDetailsData = {
    designInsights: "고급스러운 이미지와 명확한 정보를 강조하여 신뢰도를 높이고, 상세 여정 정보를 시각적으로 구성했습니다.", // 임시 텍스트
    fullDetailImg: "./img/cruisetour_keyword.png",
    bottomImages: [
-   "./img/uglyus_bottom_img_1.jpg", // 임시 이미지
+   "./img/modal_cruisetour_content.jpg",
    ],
   },
 
@@ -41,9 +41,9 @@ const workDetailsData = {
    headerImg: "./img/ohmydown_there_title.jpg",
    mainTarget: "비키니/브라질리언 제모 후 집중 관리를 원하는 고객, 건강하고 아름다운 Y존을 원하는 고객, 출산 준비하는 임산부, 잦은 피부 마찰로 신경쓰이는 고객",
    designInsights: "고급스러운 이미지와 명확한 정보를 강조하여 신뢰도를 높이고, 상세 여정 정보를 시각적으로 구성했습니다.", // 임시 텍스트
-   fullDetailImg: "./img/lotte_tour_top_mockup.jpg", // 👈상단 Flexbox 이미지 경로
+   fullDetailImg: "./img/omdt_keyword.png",
    bottomImages: [
-    "./img/uglyus_bottom_img_1.jpg", // 임시 이미지
+    "./img/modal_omdt_content.jpg",
     ],
    },
   
