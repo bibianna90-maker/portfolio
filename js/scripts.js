@@ -64,6 +64,21 @@ const workDetailsData = {
    ],
   },
 
+  "newyorkbb": {
+    title: "Newyork BㆍB",
+    category: "BRAND/뉴욕비비 B.I",
+    tool: "Illustrator, Photoshop",
+    participation: "100% 개인 프로젝트 | 2018",
+    concept: "고객의 일상에서 취향을 담은 차 한 잔이 주는 잔잔한 울림의 티 라이프스타일 브랜드",
+    headerImg: "./img/modal_chaime_title.jpg",
+    mainTarget: "프리미엄 라이프스타일을 지향하는 25~40대 여성, 웰빙 & 건강을 중시하는 직장인",
+    designInsights: "CHAIME은 자연의 울림과 시간을 모티프로 한 현대적 티 라이프스타일 브랜드로, 정제된 산세리프 워드마크와 곡선적 심볼을 통해 감각적이면서도 세련된 니치 럭셔리 이미지를 구축하였습니다. 따뜻한 브라운 컬러 톤을 중심으로 내추럴하고 품격 있는 브랜드 무드를 형성하며, 기존 티 브랜드와 차별화된 모던한 정체성으로 디자인하였습니다.",
+    fullDetailImg: "./img/chaime_keyword.png", 
+    bottomImages: [
+    "./img/modal_chaime_content.jpg",    
+    ],
+   },
+
   "hollys": {
     title: "Hollys",
     category: "UIㆍUX / 할리스 App 간편 주문 서비스 리디자인",
