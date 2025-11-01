@@ -669,7 +669,7 @@
     min-height: auto;
   }
   .detail-title-img-wrap {
-    min-height: auto;
+    height: 100vh;
   }
   
   .detail-title-text {
