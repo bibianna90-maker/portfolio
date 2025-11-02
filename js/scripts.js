@@ -64,14 +64,29 @@ const workDetailsData = {
    ],
   },
 
-  "newyorkbb": {
+  "Newyorkbb": {
     title: "Newyork BㆍB",
     category: "BRAND/뉴욕비비 B.I",
     tool: "Illustrator, Photoshop",
     participation: "100% 개인 프로젝트 | 2018",
-    concept: "고객의 일상에서 취향을 담은 차 한 잔이 주는 잔잔한 울림의 티 라이프스타일 브랜드",
-    headerImg: "./img/modal_chaime_title.jpg",
-    mainTarget: "프리미엄 라이프스타일을 지향하는 25~40대 여성, 웰빙 & 건강을 중시하는 직장인",
+    concept: "프리미엄 토탈 뷰티샵(피부관리/왁싱/네일 등) 뉴욕비비 브랜드 리디자인",
+    headerImg: "./img/modal_newyorkbb_title.jpg",
+    mainTarget: "안전성과 전문성을 최우선으로 여기며, 출산이나 결혼 등 특별한 순간을 위해 깔끔함과 자신감을 준비하는 20~30 여성",
+    designInsights: "미의 변신 - 왁싱샵에서 시작해 피부 관리, 네일 등을 아우르는 프리미엄 토탈 뷰티 샵으로의 도약을 시각적으로 표현합니다. 기존의 직관적인 핑크색 로고를 넘어, 고객이 뉴욕비비의 서비스를 통해 얻게 될 '더 우아하고 완벽한 아름다움으로의 변신' 과정을 형상화합니다.",
+    fullDetailImg: "./img/newyorkbb_keyword.png", 
+    bottomImages: [
+    "./img/modal_chaime_content.jpg",    
+    ],
+   },
+
+   "Offset": {
+    title: "Offset",
+    category: "BRAND/옵셋 B.I",
+    tool: "Illustrator, Photoshop",
+    participation: "100% 개인 프로젝트 | 2018",
+    concept: "프리미엄 토탈 뷰티샵(피부관리/왁싱/네일 등) 뉴욕비비 브랜드 리디자인",
+    headerImg: "./img/modal_newyorkbb_title.jpg",
+    mainTarget: "안전성과 전문성을 최우선으로 여기며, 출산이나 결혼 등 특별한 순간을 위해 깔끔함과 자신감을 준비하는 20~30 여성",
     designInsights: "CHAIME은 자연의 울림과 시간을 모티프로 한 현대적 티 라이프스타일 브랜드로, 정제된 산세리프 워드마크와 곡선적 심볼을 통해 감각적이면서도 세련된 니치 럭셔리 이미지를 구축하였습니다. 따뜻한 브라운 컬러 톤을 중심으로 내추럴하고 품격 있는 브랜드 무드를 형성하며, 기존 티 브랜드와 차별화된 모던한 정체성으로 디자인하였습니다.",
     fullDetailImg: "./img/chaime_keyword.png", 
     bottomImages: [
@@ -79,7 +94,7 @@ const workDetailsData = {
     ],
    },
 
-  "hollys": {
+  "Hollys": {
     title: "Hollys",
     category: "UIㆍUX / 할리스 App 간편 주문 서비스 리디자인",
     tool: "Figma, Photoshop",
