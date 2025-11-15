@@ -75,7 +75,7 @@ const workDetailsData = {
     designInsights: "미의 변신 - 왁싱샵에서 시작해 피부 관리, 네일 등을 아우르는 프리미엄 토탈 뷰티 샵으로의 도약을 시각적으로 표현합니다. 기존의 직관적인 핑크색 로고를 넘어, 고객이 뉴욕비비의 서비스를 통해 얻게 될 '더 우아하고 완벽한 아름다움으로의 변신' 과정을 형상화합니다.",
     fullDetailImg: "./img/newyorkbb_keyword.png", 
     bottomImages: [
-    "./img/modal_chaime_content.jpg",    
+    "./img/modal_newyorkbb_content.jpg",    
     ],
    },
 
@@ -83,10 +83,10 @@ const workDetailsData = {
     title: "Offset",
     category: "BRAND/옵셋 B.I",
     tool: "Illustrator, Photoshop",
-    participation: "100% 개인 프로젝트 | 2018",
-    concept: "프리미엄 토탈 뷰티샵(피부관리/왁싱/네일 등) 뉴욕비비 브랜드 리디자인",
-    headerImg: "./img/modal_newyorkbb_title.jpg",
-    mainTarget: "안전성과 전문성을 최우선으로 여기며, 출산이나 결혼 등 특별한 순간을 위해 깔끔함과 자신감을 준비하는 20~30 여성",
+    participation: "100% 개인 프로젝트 | 2021",
+    concept: "불편함 없는 핏, 스타일을 잃지 않는 편안함을 추구하는 청바지 브랜드",
+    headerImg: "./img/modal_offset_title.jpg",
+    mainTarget: "30대 ~ 50대 남녀. 고가 데님 브랜드를 경험해 봤거나, 패션에 관심이 높아 품질과 디테일을 구분할 줄 아는 소비자",
     designInsights: "CHAIME은 자연의 울림과 시간을 모티프로 한 현대적 티 라이프스타일 브랜드로, 정제된 산세리프 워드마크와 곡선적 심볼을 통해 감각적이면서도 세련된 니치 럭셔리 이미지를 구축하였습니다. 따뜻한 브라운 컬러 톤을 중심으로 내추럴하고 품격 있는 브랜드 무드를 형성하며, 기존 티 브랜드와 차별화된 모던한 정체성으로 디자인하였습니다.",
     fullDetailImg: "./img/chaime_keyword.png", 
     bottomImages: [
