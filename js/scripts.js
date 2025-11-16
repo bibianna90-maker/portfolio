@@ -87,8 +87,8 @@ const workDetailsData = {
     concept: "불편함 없는 핏, 스타일을 잃지 않는 편안함을 추구하는 청바지 브랜드",
     headerImg: "./img/modal_offset_title.jpg",
     mainTarget: "30대 ~ 50대 남녀. 고가 데님 브랜드를 경험해 봤거나, 패션에 관심이 높아 품질과 디테일을 구분할 줄 아는 소비자",
-    designInsights: "CHAIME은 자연의 울림과 시간을 모티프로 한 현대적 티 라이프스타일 브랜드로, 정제된 산세리프 워드마크와 곡선적 심볼을 통해 감각적이면서도 세련된 니치 럭셔리 이미지를 구축하였습니다. 따뜻한 브라운 컬러 톤을 중심으로 내추럴하고 품격 있는 브랜드 무드를 형성하며, 기존 티 브랜드와 차별화된 모던한 정체성으로 디자인하였습니다.",
-    fullDetailImg: "./img/chaime_keyword.png", 
+    designInsights: "상반된 두 가치(Fit & Comfort)의 완벽한 조화를 시각화한 심볼입니다. 'OFFSET'의 이니셜 O와 S를 결합하여, 두 요소가 서로를 상쇄시키며 최적의 균형점을 이루는 브랜드 철학을 모던하고 미니멀하게 워드마크 형태로 가독성 있게 표현했습니다.",
+    fullDetailImg: "./img/offset_keyword.png", 
     bottomImages: [
     "./img/modal_chaime_content.jpg",    
     ],
