@@ -90,7 +90,7 @@ const workDetailsData = {
     designInsights: "상반된 두 가치(Fit & Comfort)의 완벽한 조화를 시각화한 심볼입니다. 'OFFSET'의 이니셜 O와 S를 결합하여, 두 요소가 서로를 상쇄시키며 최적의 균형점을 이루는 브랜드 철학을 모던하고 미니멀하게 워드마크 형태로 가독성 있게 표현했습니다.",
     fullDetailImg: "./img/offset_keyword.png", 
     bottomImages: [
-    "./img/modal_chaime_content.jpg",    
+    "./img/modal_offset_content.jpg",    
     ],
    },
 
