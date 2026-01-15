@@ -48,6 +48,23 @@ const workDetailsData = {
     "./img/modal_omdt_content-03.jpg",
     ],
    },
+
+   "Scrub": {
+    title: "Pattrea",
+    category: "CONTENTS/페트레나 바디 스크럽 제품 상세페이지",
+    tool: "Illustrator, Photoshop",
+    participation: "100% 개인 프로젝트 | 2019",
+    concept: " 페트레나 바디 스크럽 공식 상세페이지",
+    headerImg: "./img/ohmydown_there_title.jpg",
+    mainTarget: "비키니/브라질리언 제모 후 집중 관리를 원하는 고객, 건강하고 아름다운 Y존을 원하는 고객, 출산 준비하는 임산부, 잦은 피부 마찰로 신경쓰이는 고객",
+    designInsights: "Oh! My down there은 Y존의 건강과 전문적인 케어를 세련되고 자신감 있는 여성의 이미지와 함께 전달합니다. 핑크와 화이트를 메인 컬러로 사용하여 민감한 부위의 케어 제품임에도 불구하고 트렌디하고 당당한 분위기를 연출합니다.",
+    fullDetailImg: "./img/omdt_keyword.png",
+    bottomImages: [
+     "./img/modal_omdt_content-01.jpg",
+     "./img/modal_omdt_content-02.jpg",
+     "./img/modal_omdt_content-03.jpg",
+     ],
+    },
   
    "Chaime": {
    title: "Chaime",
@@ -108,9 +125,7 @@ const workDetailsData = {
     { text: "VIEW", link: "링크_URL_2" },
     ],
    bottomImages: [
-    "./img/modal_hollys_content-01.jpg", 
-    "./img/modal_hollys_content-02.jpg",
-    "./img/modal_hollys_content-03.jpg",  
+    "./img/modal_hollys_content.jpg",   
     ],
    },
 
@@ -119,13 +134,13 @@ const workDetailsData = {
     category: "Editorial/리카 선인장 왁싱 라인 전단",
     tool: "Illustrator, Photoshop",
     participation: "100% 개인 프로젝트 | 2017",
-    concept: "불편함 없는 핏, 스타일을 잃지 않는 편안함을 추구하는 청바지 브랜드",
+    concept: "이탈리아 프리미엄 왁싱 브랜드 리카(RICA)의 신제품 ‘선인장 오일 라인’ 홍보를 위한 전문가용 양면 전단",
     headerImg: "./img/modal_rica_opuntia_title.jpg",
-    mainTarget: "30대 ~ 50대 남녀. 고가 데님 브랜드를 경험해 봤거나, 패션에 관심이 높아 품질과 디테일을 구분할 줄 아는 소비자",
-    designInsights: "상반된 두 가치(Fit & Comfort)의 완벽한 조화를 시각화한 심볼입니다. 'OFFSET'의 이니셜 O와 S를 결합하여, 두 요소가 서로를 상쇄시키며 최적의 균형점을 이루는 브랜드 철학을 모던하고 미니멀하게 워드마크 형태로 가독성 있게 표현했습니다.",
-    fullDetailImg: "./img/offset_keyword.png", 
+    mainTarget: "단순한 제모를 넘어 피부 건강을 고려한 성분의 안전성과 시술의 편의성을 동시에 중시하는 왁싱샵 및 에스테틱 전문가",
+    designInsights: "기능 중심의 파편화된 정보를 전문가용 고기능성 지표로 체계화하고, 에코서트(Ecocert) 인증 성분의 신뢰감과 이탈리아 프리미엄 감성을 담은 어스 톤(Earth Tone)의 비주얼 아이덴티티를 확립하여 브랜드의 새로운 이미지를 선인장 양면 전단에 구현하였습니다.",
+    fullDetailImg: "./img/rica_opuntia_keyword.png", 
     bottomImages: [
-    "./img/modal_rica_opuntia_title.jpg",    
+    "./img/modal_rica_opuntia_content.jpg",    
     ],
    },
   };
