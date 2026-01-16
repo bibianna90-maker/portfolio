@@ -122,7 +122,7 @@ const workDetailsData = {
     designInsights: "할리스의 장점은 기존 로고가 주는 고급스러운 아이덴티티이며, 단점은 직관적이지 않고 복잡한 UI라고 생각했습니다. 따라서 브랜드의 강점은 유지하면서 단점을 보완하여, 고급스럽고 여유로운 분위는 살리되, 사용자가 보다 쉽게 접근할 수 있도록 심플하고 직관적인 UI 디자인을 기획하였습니다.",
     fullDetailImg: "./img/hollys_keyword.png",
     buttons: [
-    { text: "VIEW", link: "링크_URL_2" },
+    { text: "VIEW", link: "https://www.figma.com/proto/YNjGb2vM6XMO5EOfWwmORY/Level-On-%EB%A0%88%EB%B2%A8-%EC%98%A8?page-id=713%3A5&node-id=1697-2401&viewport=8352%2C-2520%2C0.5&t=lMz39zYB0Hp0vK2P-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1697%3A2401" },
     ],
    bottomImages: [
     "./img/modal_hollys_content.jpg",   
