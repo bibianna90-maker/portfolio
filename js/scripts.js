@@ -55,14 +55,12 @@ const workDetailsData = {
     tool: "Illustrator, Photoshop",
     participation: "100% 회사 프로젝트 | 2019",
     concept: " 페트레나 바디 스크럽 공식 상세페이지",
-    headerImg: "./img/ohmydown_there_title.jpg",
+    headerImg: "./img/scrub_title.jpg",
     mainTarget: "비키니/브라질리언 제모 후 집중 관리를 원하는 고객, 건강하고 아름다운 Y존을 원하는 고객, 출산 준비하는 임산부, 잦은 피부 마찰로 신경쓰이는 고객",
     designInsights: "Oh! My down there은 Y존의 건강과 전문적인 케어를 세련되고 자신감 있는 여성의 이미지와 함께 전달합니다. 핑크와 화이트를 메인 컬러로 사용하여 민감한 부위의 케어 제품임에도 불구하고 트렌디하고 당당한 분위기를 연출합니다.",
     fullDetailImg: "./img/omdt_keyword.png",
     bottomImages: [
-     "./img/modal_omdt_content-01.jpg",
-     "./img/modal_omdt_content-02.jpg",
-     "./img/modal_omdt_content-03.jpg",
+     "./img/modal_scrub_content.jpg",
      ],
     },
   
