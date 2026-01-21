@@ -56,7 +56,7 @@ const workDetailsData = {
     participation: "100% 회사 프로젝트 | 2019",
     concept: " 페트레나 바디 스크럽 공식 상세페이지",
     headerImg: "./img/scrub_title.jpg",
-    mainTarget: "비키니/브라질리언 제모 후 집중 관리를 원하는 고객, 건강하고 아름다운 Y존을 원하는 고객, 출산 준비하는 임산부, 잦은 피부 마찰로 신경쓰이는 고객",
+    mainTarget: "제모 후 인그로운 헤어 관리를 원하는 고객,",
     designInsights: "Oh! My down there은 Y존의 건강과 전문적인 케어를 세련되고 자신감 있는 여성의 이미지와 함께 전달합니다. 핑크와 화이트를 메인 컬러로 사용하여 민감한 부위의 케어 제품임에도 불구하고 트렌디하고 당당한 분위기를 연출합니다.",
     fullDetailImg: "./img/omdt_keyword.png",
     bottomImages: [
@@ -124,6 +124,21 @@ const workDetailsData = {
     ],
    bottomImages: [
     "./img/modal_hollys_content.jpg",   
+    ],
+   },
+
+   "Rica_Black": {
+    title: "Rica black Waxing Line Leaflet",
+    category: "Editorial/리카 블랙 왁싱 라인 리플렛",
+    tool: "Illustrator, Photoshop",
+    participation: "100% 회사 프로젝트 | 2017",
+    concept: "이탈리아 프리미엄 왁싱 브랜드 리카(RICA)의 신제품 ‘선인장 오일 라인’ 홍보를 위한 전문가용 양면 전단",
+    headerImg: "./img/modal_rica_opuntia_title.jpg",
+    mainTarget: "단순한 제모를 넘어 피부 건강을 고려한 성분의 안전성과 시술의 편의성을 동시에 중시하는 왁싱샵 및 에스테틱 전문가",
+    designInsights: "기능 중심의 파편화된 정보를 전문가용 고기능성 지표로 체계화하고, 에코서트(Ecocert) 인증 성분의 신뢰감과 이탈리아 프리미엄 감성을 담은 어스 톤(Earth Tone)의 비주얼 아이덴티티를 확립하여 브랜드의 새로운 이미지를 선인장 양면 전단에 구현하였습니다.",
+    fullDetailImg: "./img/rica_opuntia_keyword.png", 
+    bottomImages: [
+    "./img/.jpg",    
     ],
    },
 
