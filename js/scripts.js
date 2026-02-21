@@ -138,7 +138,7 @@ const workDetailsData = {
     designInsights: "기능 중심의 파편화된 정보를 전문가용 고기능성 지표로 체계화하고, 에코서트(Ecocert) 인증 성분의 신뢰감과 이탈리아 프리미엄 감성을 담은 어스 톤(Earth Tone)의 비주얼 아이덴티티를 확립하여 브랜드의 새로운 이미지를 선인장 양면 전단에 구현하였습니다.",
     fullDetailImg: "./img/rica_opuntia_keyword.png", 
     bottomImages: [
-    "./img/작업중",    
+    "./img/작업중",
     ],
    },
 
